@@ -4,7 +4,6 @@ Dashboard UI
  */
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -15,6 +14,7 @@ Dashboard UI
   --pink: #f66d9b;
   --red: #cd201f;
   --orange: #fd9644;
+ * Copyright 2011-2018 The Bootstrap Authors
   --yellow: #f1c40f;
   --green: #5eba00;
   --teal: #2bcbba;
@@ -18613,4 +18613,17 @@ svg {
 
 .icon-index {
   width: 100px;
+}
+
+
+.logo-client {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 8%;
+}
+
+.logo-client-xl {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 8%;
 }
