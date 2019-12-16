@@ -15,7 +15,7 @@
     <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo/favicon.png" />
     <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>La compañia digital - Servicios tecnologicos</title>
+    <title>La compañía digital - Servicios tecnológicos de todo tipo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <script src="./assets/js/require.min.js"></script>
@@ -36,20 +36,612 @@
     <!-- Input Mask Plugin -->
     <script src="./assets/plugins/input-mask/plugin.js"></script>
   </head>
+  <style type="text/css">
+    .floatingBtn {
+      position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 1000;
+    }
+
+    #wspBtn {
+      width: 56px;
+        min-width: 56px;
+        height: 56px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+  </style>
   <body class="">
     <div class="page">
-      <div class="page-content">
-        <div class="container text-center">
-          <img src="assets/images/megaphone.png" height="250">
-          <div class="display-1 text-muted mb-5"><i class="si si-exclamation"></i> Proximamente!</div>
-          <h1 class="h2 mb-3">Estamos experimentando una actualización de nuestra web.</h1>
-          <p class="h4 text-muted font-weight-normal mb-7">Lo sentimos, pero nuestro servicio no está disponible por el momento...</p>
-          <p class="h4 text-muted font-weight-normal mb-7">Puedes escribirnos a lacompaniad@gmail.com</p>
-          <a class="btn btn-primary" href="javascript:history.back()">
-            <i class="fe fe-arrow-left mr-2"></i>Volver
-          </a>
+      <div class="page-main">
+        <div class="header py-4 bg-dark">
+          <div class="container">
+            <div class="d-flex">
+              <a class="header-brand text-white" href="./index.html">
+                La compañía <span class="text-primary">digital</span>
+              </a>
+
+              <div class="d-flex order-lg-2 ml-auto">
+                <div class="nav-item d-none d-md-flex">
+                  <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                    <i class="dropdown-icon fe fe-linkedin ml-1"></i>
+                  </a>
+                  <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                    <i class="dropdown-icon fe fe-facebook ml-1"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                    <i class="dropdown-icon fe fe-instagram ml-1"></i>
+                  </a>
+                  <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                    <i class="dropdown-icon fe fe-twitter ml-1"></i>
+                  </a>
+                </div>
+                <a class="nav-link icon" href="FAQs.html">
+                  FAQ's
+                </a>
+                <a class="nav-link icon" href="about.html">
+                  Nosotros
+                </a>
+
+                <a href="contact.html" class="btn btn-primary">Contacto</a>
+            
+              </div>
+              <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-3 ml-auto">
+                <ul class="nav nav-tabs border-0 flex-column flex-lg-row float-right">
+                  <li class="nav-item">
+                    <a href="./tucuman.html" class="nav-link"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg order-lg-first">
+                <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link active"><i class="fe fe-home"></i> Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./promotions.html" class="nav-link"><i class="fe fe-list"></i> Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./opportunities.html" class="nav-link"><i class="fe fe-briefcase"></i> Oportunidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./blog.html" class="nav-link"><i class="fe fe-book"></i> Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header class="bg-gray-light py-5 ">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">Servicios digitales de todo tipo</h1>
+                <p class="lead mb-5 text-white text-muted">Para empresas, negocios, marcas o emprendimientos</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="bg-white">
+          <div class="container py-5">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="demo/photos/adrian-infernus-281832-500.jpg">
+                </div>
+                <div class="col-md-7">
+                  <h2>Somos especialistas en tecnología, marketing y soluciones digitales</h2>
+                  <h4 class="text-orange">Trabajamos en una amplia gama de proyectos</h4>
+                  <p>
+                    Desde <b>servicios basicos</b> en diseño, fotografía, videos o asesoramiento <b>hasta grandes desarrollos</b> para clientes corporativos.
+                  </p>
+                  <p>Colaboramos y <b>potenciamos negocios</b> implementando las <b>técnicas y herramientas digitales</b> más innovadoras.</p>
+                  <p class="text-muted">
+
+                        Nos comprometemos con el <b>crecimiento de nuestros clientes y sus marcas</b> aportando verdadero valor.
+
+                  </p>
+                  <a href="about.html" class="btn btn-outline-primary">Leer más <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+
+          <div class="floatingBtn">
+            <a href="https://wa.me/5493814788633?text=Hola,%20te%20escribo%20por%20la%20compania.." target="_blank">
+              <button id="wspBtn" type="button" class="btn-success"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 45px"></i></button>
+            </a>  
+          </div>
+
+          <div class="bg-gray-lightest">
+            <div class="container py-5">
+              
+              <h2 class="text-center">
+                Nuestros servicios
+              </h2>
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/marketing.png">
+                      <div class="text-muted mb-4 mt-1">Estrategias</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/producer.png">
+                      <div class="text-muted mb-4 mt-1">Branding</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/design.png">
+                      <div class="text-muted mb-4 mt-1">Diseño</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/website.png">
+                      <div class="text-muted mb-4 mt-1">Tecnología</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/content.png">
+                      <div class="text-muted mb-4 mt-1">Contenido</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                  <div class="card" data-toggle="tooltip" data-placement="bottom" title="Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña">
+                    <div class="card-body p-3 text-center">
+                      <img src="assets/images/icons/marketing.png">
+                      <div class="text-muted mb-4 mt-1">Marketing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white">
+            <div class="container py-3">
+              <h3 class="text-center my-6">
+                Ultimas publicaciones
+              </h3>
+              <div class="row row-cards row-deck">
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <a href="#"><img class="card-img-top" src="./demo/photos/david-klaasen-54203-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+                    <div class="card-body d-flex flex-column">
+                      <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                      <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                      <div class="d-flex align-items-center pt-5 mt-auto">
+                        <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/26.jpg)"></div>
+                        <div>
+                          <a href="./profile.html" class="text-default">Coke Colombres</a>
+                          <small class="d-block text-muted">Hace 3 dias</small>
+                        </div>
+                        <div class="ml-auto text-muted">
+                          <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <a href="#"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you."></a>
+                    <div class="card-body d-flex flex-column">
+                      <h4><a href="#">Well, I didn't vote for you.</a></h4>
+                      <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
+                      <div class="d-flex align-items-center pt-5 mt-auto">
+                        <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+                        <div>
+                          <a href="./profile.html" class="text-default">Tomas Guerineau</a>
+                          <small class="d-block text-muted">Hace 4 dias</small>
+                        </div>
+                        <div class="ml-auto text-muted">
+                          <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
+                    <div class="card-body d-flex flex-column">
+                      <h4><a href="#">How do you know she is a witch?</a></h4>
+                      <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
+                      <div class="d-flex align-items-center pt-5 mt-auto">
+                        <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/26.jpg)"></div>
+                        <div>
+                          <a href="./profile.html" class="text-default">Coke Colombres</a>
+                          <small class="d-block text-muted">hace 1 semana</small>
+                        </div>
+                        <div class="ml-auto text-muted">
+                          <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card">
+                <div class="card-header">
+                  Hola, somos LA COMPANIA
+                </div>
+                <div class="card-body">
+                  Estamos listos para llevar a cabo cualquier proyecto tecnologico - digital.
+                  <br><br>
+                  Contamos con un equipo ampliamente capacitado para cubrir todas las areas que necesites cubrir
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  Hacemos
+                </div>
+                <div class="card-body">
+                  marketing
+                  <br>
+                  estrategias
+                  <br>
+                  asesoria
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="bg-gray-lightest py-6">
+            <div class="container">
+              <h2 class="text-center">
+                Nuestro equipo
+              </h2>
+              <br>
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 text-center">
+                  <img class="rounded-circle mb-3" src="demo/faces/male/11.jpg" style="border: 3px solid #343a40;">
+                  <h4>Coke Colombres</h4>
+                  <hr class="my-1 mx-3">
+                  <p>Director general</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 text-center">
+                  <img class="rounded-circle mb-3" src="demo/faces/male/13.jpg" style="border: 3px solid #343a40;">
+                  <h4>Tomás Guerineau</h4>
+                  <hr class="my-1 mx-3">
+                  <p>Director de equipos</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 text-center">
+                  <img class="rounded-circle mb-3" src="demo/faces/male/15.jpg" style="border: 3px solid #343a40;">
+                  <h4>Nicolas Ottaviani</h4>
+                  <hr class="my-1 mx-3">
+                  <p>Encargado de marketing</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 text-center">
+                  <img class="rounded-circle mb-3" src="demo/faces/male/18.jpg" style="border: 3px solid #343a40;">
+                  <h4>Guido Laredo</h4>
+                  <hr class="my-1 mx-3">
+                  <p>Diseñador - Productor de contenidos</p>
+                </div>
+              </div>
+              <div class="row mt-6">
+                <div class="col-12 text-center">
+                  <h3 class="text-primary">¿Te gustaria sumarte a nuestro equipo?</h3>
+                  <a class="btn btn-lg btn-outline-primary">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-lighter py-6">
+            <div class="container">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Nuestro portfolio</h2>
+                <br>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Diseño</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Páginas Web</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body"> 
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <div class="row row-deck row-cards">
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Nemesia</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/ilnur-kalimullin-218996-500.jpg" alt="Photo by Alice Mason" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>A mi noo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Don Manolo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Gipsa</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <div class="row row-deck row-cards">
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Nemesia</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/ilnur-kalimullin-218996-500.jpg" alt="Photo by Alice Mason" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>A mi noo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Don Manolo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Gipsa</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                      <div class="row row-deck row-cards">
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Nemesia</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/ilnur-kalimullin-218996-500.jpg" alt="Photo by Alice Mason" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>A mi noo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Don Manolo</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                          <div class="card p-3">
+                            <a href="javascript:void(0)" class="mb-3">
+                              <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                            </a>
+                            <div class="d-flex align-items-center px-2">
+                              <div>
+                                <div>Gipsa</div>
+                                <small class="d-block text-muted">Logo, publicaciones, menu</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
       </div>
+      <div class="footer bg-white">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4">
+              <a class="header-brand" href="./index.html">
+                La compania digital
+              </a>
+              <p class="mt-2">Somos consultores especialistas en crear soluciones digitales</p>
+              <hr class="mb-3 mt-4">
+              <h4>Redes sociales</h4>
+              <ul class="social-links list-inline mb-0 mt-2">
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="1234567890"><i class="fa fa-phone"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="@skypename"><i class="fa fa-skype"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4>Algunos de nuestros servicios</h4>
+              <ul class="list-unstyled leading-loose">
+                <li><i class="fe fe-check text-success mr-2" aria-hidden="true"></i> Marketing digital</li>
+                <li><i class="fe fe-check text-success mr-2" aria-hidden="true"></i> Diseño gráfico & Web</li>
+                <li><i class="fe fe-check text-success mr-2" aria-hidden="true"></i> Generación de contenidos</li>
+
+                <li><i class="fe fe-check text-success mr-2" aria-hidden="true"></i> Asesoría en seguridad informatica</li>
+
+                <li><i class="fe fe-check text-success mr-2" aria-hidden="true"></i> Asesoría gestión de recursos digitales</li>
+                
+              </ul>
+            </div>
+
+            <div class="col-md-4">
+              <h4>Nuestro equipo</h4>
+              <div class="text-muted">
+                <a href="equipo.html">
+                  <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+                </a>
+                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/12.jpg)"></div>
+                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/10.jpg)"></div>
+              </div>
+              <h4 class="mt-6">Nuestro portfolio</h4>
+              <div class="text-muted">
+                <span class="stamp stamp-md bg-blue mr-3">
+                  Clic
+                </span>
+                <span class="stamp stamp-md bg-green mr-3">
+                  dataLab
+                </span>
+                <span class="stamp stamp-md bg-orange mr-3">
+                  ditrabajo
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer bg-dark">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div class="col-auto ml-lg-auto">
+              <span class="mr-2">Copyright © 2018</span><a href="." class="mr-2">< / COKE ></a> 
+              <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm"><i class="flag flag-gb" style="height: 12px"></i> EN</a>
+              <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary btn-sm"><i class="flag flag-ar" style="height: 12px"></i> ES</a>
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-inline-dots mb-0">
+                    <li class="list-inline-item"><a href="./docs/index.html">Preguntas Frecuentes</a></li>
+                    <li class="list-inline-item"><a href="./faq.html">Contacto</a></li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm">Oportunidades</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
