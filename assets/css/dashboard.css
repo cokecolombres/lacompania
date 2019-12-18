@@ -18615,3 +18615,6 @@ svg {
   width: 100px;
 }
 
+.max-w100 {
+    max-width: 100px;
+  }
