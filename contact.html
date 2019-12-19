@@ -12,10 +12,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" href="assets/images/logo/lacompania.png" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/lacompania.png" />
     <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>C O K E - Developer</title>
+    <title>Contacto - La Compañia Digital</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <script src="./assets/js/require.min.js"></script>
@@ -39,59 +39,40 @@
   <body class="">
     <div class="page">
       <div class="page-main">
-        <div class="header py-4 bg-dark">
+        <div class="header py-4 bg-white">
           <div class="container">
             <div class="d-flex">
-              <a class="header-brand text-white" href="./index.html">
+              <img src="assets/images/logo/lacompania.png" class="header-brand-img" alt="La compañía digital">
+              <a class="header-brand text-dark pt-1" style="font-size: 28px" href="./index.html">
                 La compañía <span class="text-primary">digital</span>
               </a>
 
               <div class="d-flex order-lg-2 ml-auto">
                 <div class="nav-item d-none d-md-flex">
-                  <i class="dropdown-icon fe fe-linkedin ml-1"></i>
-                  <i class="dropdown-icon fe fe-facebook ml-1"></i>
-                  <i class="dropdown-icon fe fe-twitter ml-1"></i>
-                </div>
-                <div class="dropdown d-none d-md-flex mr-2">
-                  <a class="nav-link icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    Oportunidades
+                  <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                    <i class="dropdown-icon fe fe-linkedin ml-1"></i>
                   </a>
-                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end">
-                    <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/male/41.jpg)"></span>
-                      <div>
-                        <strong>Nathan</strong> pushed new commit: Fix page load performance issue.
-                        <div class="small text-muted">10 minutes ago</div>
-                      </div>
-                    </a>
-                    <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/1.jpg)"></span>
-                      <div>
-                        <strong>Alice</strong> started new task: Tabler UI design.
-                        <div class="small text-muted">1 hour ago</div>
-                      </div>
-                    </a>
-                    <a href="#" class="dropdown-item d-flex">
-                      <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/18.jpg)"></span>
-                      <div>
-                        <strong>Rose</strong> deployed new version of NodeJS REST Api V3
-                        <div class="small text-muted">2 hours ago</div>
-                      </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item text-center">Ver todas las oportunidades</a>
-                  </div>
+                  <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                    <i class="dropdown-icon fe fe-facebook ml-1"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                    <i class="dropdown-icon fe fe-instagram ml-1"></i>
+                  </a>
+                  <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                    <i class="dropdown-icon fe fe-twitter ml-1"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCd4Rh7AD4lnpr1AQ5XmOucg" target="_blank">
+                    <i class="dropdown-icon fe fe-video ml-1"></i>
+                  </a>
                 </div>
-                <a class="nav-link icon" href="preguntas.html">
-                  Preguntas frecuentes
+                <!-- <a class="nav-link icon" href="about.html">
+                  Nosotros
+                </a> -->
+                <a class="nav-link icon" href="FAQs.html">
+                  Preguntas Frecuentes
                 </a>
 
-                <form class="input-icon my-3 my-lg-0">
-                  <input type="search" class="form-control header-search" placeholder="Buscar.." tabindex="1">
-                  <div class="input-icon-addon">
-                    <i class="fe fe-search"></i>
-                  </div>
-                </form>
+                <a href="contact.html" class="btn btn-primary">Contacto</a>
             
               </div>
               <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
@@ -100,7 +81,7 @@
             </div>
           </div>
         </div>
-        <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="header collapse d-lg-flex p-0 sticky-top bg-dark" id="headerMenuCollapse">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-3 ml-auto">
@@ -113,13 +94,78 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link"><i class="fe fe-home"></i> Inicio</a>
+                    <a href="./index.html" class="nav-link active"><i class="fe fe-home"></i> Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a>
+                    <!-- <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a> -->
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="fe fe-box"></i> Servicios</a>
+                    <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
+                      <a href="web.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Diseño Web</strong>
+                        </div>
+                      </a>
+                      <a href="diseño.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Diseño Gráfico</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="marketing.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Marketing Digital</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="gestion.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-dark"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Gestion de proyectos</strong>
+                            <!-- <div class="small text-muted">De todo tipo</div> -->
+                          </div>
+                      </a>
+                      <a href="contenido.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Generación de contenido</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="asesoria.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Asesoría para tu negocio o empresa</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="secondary.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Servicios secundarios</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                    </div>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link"><i class="fe fe-list"></i> Pack & Promociones</a>
+                    <a href="./promotions.html" class="nav-link"><i class="fe fe-list"></i> Promociones</a>
                   </li>
                   <li class="nav-item">
                     <a href="./opportunities.html" class="nav-link"><i class="fe fe-briefcase"></i> Oportunidades</a>
@@ -132,12 +178,121 @@
             </div>
           </div>
         </div>
-        <div class="my-3 my-md-5">
+
+        <section>        
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.130701663736!2d-65.20822858511856!3d-26.83579488316082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0efa5ba3ff%3A0xd9d751d70528c2c4!2s9%20de%20Julio%20371%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1576766954894!5m2!1ses-419!2sar" class="col-12 rounded" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>            
+        </section>
+        
+       <div class="py-6 mt-7">
           <div class="container">
-            Contacto
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Contactanos</h2>
+                </div>
+              </div>
+            <div class="row row-cards row-deck">
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card bg-primary border-secondary">
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-white border-bottom p-1">Medios de contacto</h4>
+                      <div class="text-muted text-white"><i class="fa fa-whatsapp mr-3 mb-3"></i><strong>(381) 651-8701</strong></div>
+                      <div class="text-muted text-white"><i class="fe fe-mail mr-2"></i><strong>lacompaniad@gmail.com</strong></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title border-bottom p-1 text-secondary">Redes sociales</h4>
+                      <div class="d-flex">
+                        <a href=""><div style="color: #01e675;"><i class="fa fa-whatsapp mr-3 mb-3 display-4 mr-4 ml-2"></i></div></a>
+                        <a href=""><div class="text-blue"><i class="fa fa-facebook mr-3 mb-3 display-4 mr-3"></i></div></a>
+                        <a href=""><div style="color: #CD4F84;"><i class="fa fa-instagram mr-3 mb-3 display-4 mr-4"></i></div></a>
+                        <a href=""><div style="color: rgba(29,161,242,1.00);"><i class="fa fa-twitter mr-3 mb-3 display-4 mr-4"></i></div></a>
+                        <a href=""><div style="color: #2977c9;"><i class="fa fa-linkedin mr-3 mb-3 display-4 mr-4"></i></div></a>
+                        <a href=""><div class="text-danger"><i class="fa fa-youtube mr-3 mb-3 display-4 mr-4"></i></div></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card bg-warning border-secondary">
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-white border-bottom p-1">Geolocalización</h4>
+                        <div class="d-flex">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center text-white"><i class="fa fa-thumb-tack mr-1 mt-5"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong class="text-white">9 de Julio 371 - 4B</strong><br><p class="text-white">San Miguel de Tucumán, Tucumán, Argentina.</p>
+                            <!-- <div class="small text-muted">De todo tipo</div> -->
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+          </section>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Contrasena</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Dirección 2da parte</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState">País</label>
+                      <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                      <label for="inputZip">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Sí, quiero.
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+
+      
       <div class="footer bg-white">
         <div class="container">
           <div class="row">
