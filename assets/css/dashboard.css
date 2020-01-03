@@ -18618,3 +18618,49 @@ svg {
 .max-w400 {
     max-width: 200px;
   }
+
+.bg-primary {
+  background: #ffda00 !important;
+}
+.bg-secondary {
+  background: #e8ae00 !important;
+}
+.bg-three {
+  background: #343a40 !important;
+}
+
+.btn-primary {
+  background: #ffda00 !important;
+  border-color: #343a40 !important;
+  color: black;
+}
+
+.btn-primary:hover {
+  background: #e8ae00 !important;
+  color: white !important;
+}
+
+.text-primary {
+  color: #ffda00 !important;
+}
+.text-secondary {
+  color: #e8ae00 !important;
+}
+
+.icon_navbar {
+  width: %;
+}
+
+.btn-outline-primary {
+  border-color: #ffda00 !important;
+  color: black;
+}
+.btn-outline-primary:hover {
+  border-color: black !important;
+  background: #ffda00 !important;
+  color: black !important;
+}
+
+.anav:hover {
+  color: #ffda00 !important;
+}
