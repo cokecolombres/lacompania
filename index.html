@@ -27,6 +27,24 @@
     <!-- Dashboard Core -->
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
+    <!-- Animaciones hover -->
+    <link href="./assets/css/hover-min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
+
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.css">
+
+    <!-- Swal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!-- c3.js Charts Plugin -->
     <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
     <script src="./assets/plugins/charts-c3/plugin.js"></script>
@@ -52,6 +70,15 @@
         border-radius: 50%;
     }
 
+    .masthead {
+      height: 90vh;
+      min-height: 500px;
+      background-image: url('assets/images/technology.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
   </style>
   <body class="">
     <div class="page">
@@ -60,7 +87,7 @@
           <div class="container">
             <div class="d-flex">
               <a href="./index.html">
-                <img src="assets/images/logo/lacompaniabanda2.png" class="header-brand-img" alt="La compañía digital">
+                <img src="assets/images/logo/logo11.png" class="header-brand-img" alt="La compañía digital">
               </a>
 
               <!-- La compañía <span class="text-primary">digital</span> -->
@@ -83,15 +110,10 @@
                     <img src="assets/images/icons/youtube_icon.png" width="20">
                   </a> -->
                 </div>
-                <!-- <a class="nav-link icon" href="about.html">
-                  Nosotros
-                </a> -->
-                <a class="nav-link icon" href="FAQs.html">
+                <a class="nav-link icon d-none d-md-flex" href="FAQs.html">
                   Preguntas Frecuentes
                 </a>
-
-                <a href="contact.html" class="btn btn-primary">Contacto</a>
-            
+                <a href="contact.html" class="btn btn-outline-secondary d-none d-md-flex hvr-float-shadow">Contacto</a>
               </div>
               <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
                 <span class="header-toggler-icon"></span>
@@ -104,8 +126,11 @@
             <div class="row align-items-center">
               <div class="col-lg-3 ml-auto">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row float-right">
-                  <li class="nav-item">
-                    <a href="./tucuman.html" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
+                  <!-- <li class="nav-item">
+                    <a href="http://tucuman.digital" target="_blank" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
+                  </li> -->
+                  <li class="nav-item d-none d-lg-flex">
+                    <a id="btn-proximamente" class="nav-link anav"><i class="fe fe-book"></i> Blog</a>
                   </li>
                 </ul>
               </div>
@@ -188,126 +213,182 @@
                   <li class="nav-item">
                     <a href="./opportunities.html" class="nav-link anav"><i class="fe fe-briefcase"></i> Oportunidades</a>
                   </li>
-                  <li class="nav-item">
-                    <a href="./blog.html" class="nav-link anav"><i class="fe fe-book"></i> Blog</a>
-                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <header class="bg-primary py-2">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-12">
-                <h1 class="display-4 text-dark mt-5 mb-2">Brindamos soluciones digitales de todo tipo</h1>
-                <p class="lead mb-5 text-dark"><strong>Para empresas, negocios, marcas o emprendimientos</strong></p>
+
+
+        <div class="floatingBtn">
+          <a href="https://wa.me/5493814788633?text=Hola,%20te%20escribo%20por%20la%20compania.." target="_blank">
+            <button id="wspBtn" type="button" class="btn-success"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 45px"></i></button>
+          </a>  
+        </div>
+
+
+
+        <header class="masthead">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-12 text-center py-5 bg-gray-lightest scrollanimation animated bounceInUp adr-5 adl-1" style="opacity: 0.85">
+                <h1 class="font-weight-bold">Brindamos soluciones digitales de todo tipo</h1>
+                <p class="font-weight-bold text-gray h3">Somos especialistas en tecnología, marketing e implementación de soluciones digitales.</p>
+                <a class="btn btn-lg btn-outline-secondary font-weight-bold hvr-float-shadow" data-toggle="modal" data-target=".bd-example-modal-lg">Ver video</a>
               </div>
             </div>
           </div>
         </header>
 
-        <div class="bg-gray-lightest">
-          <div class="container py-5">
-            <div class="row">
-                <div class="col-md-5">
-                    <!-- <img src="assets/images/technology.jpg"> -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZOoVOfieAF8" allowfullscreen></iframe>
-                    </div>
+
+        <!-- Large modal -->
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title h4" id="myLargeModalLabel">Presentación - la compañía digital</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZOoVOfieAF8" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-7">
-                  <h2>Somos especialistas en tecnología, marketing e implementación de soluciones digitales</h2>
-                  <h3 class="text-secondary">Trabajamos en una amplia gama de proyectos</h3>
-                  <p>
-                    Desde servicios basicos en diseño, fotografía, videos, asesoramiento o gestión <b>hasta grandes desarrollos</b> para clientes corporativos.
-                  </p>
-                  <p>Colaboramos y <b>potenciamos negocios</b> implementando las <b>técnicas y herramientas digitales</b> más innovadoras.</p>
-                  <p class="text-muted">
-                    Nos comprometemos con el <b>crecimiento de nuestros clientes y sus marcas</b> aportando valor verdadero.
-                  </p>
-                  <!-- <a href="about.html" class="btn btn-outline-primary">Leer más <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
-                </div>
+              </div>
             </div>
           </div>
         </div>
 
+
         <div class="">
 
-          <div class="floatingBtn">
-            <a href="https://wa.me/5493814788633?text=Hola,%20te%20escribo%20por%20la%20compania.." target="_blank">
-              <button id="wspBtn" type="button" class="btn-success"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 45px"></i></button>
-            </a>  
-          </div>
+          
 
           <div class="bg-white">
             <div class="container py-5">
               <div class="card-header">
                 <h3 class="section-heading text-uppercase">Nuestros servicios</h3>
+                <button id="btn-proximamente">dale bro</button>
                 <div class="card-options">
-                  <small class="btn text-primary ml-2">Ver todos</small>
+                  <span class="btn text-weight-bold text-orange text-uppercase ml-2 hvr-underline-from-right">Ver todos</span>
                 </div>
               </div>
               <div class="card-body">
-                <div class="">
-                  <div class="row row-cards row-deck">
-                    <div class="col-lg-6">
-                      <div class="card card-aside">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/red.png);"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Desarrollo web</a></h4>
-                          <div class="text-muted">Plataformas E-commerce, página Web Estática/Dinámica, analítica Web, posicionamiento SEO, campañas por Google Ads, mantenimiento Mensual de página web, etc.</div>
+                <div class="row row-deck row-cards">
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-lightest hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/red.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Desarrollo web</h4>
+                            <span class="text-muted small">
+                              Plataformas E-commerce, página Web Estática/Dinámica, analítica Web, posicionamiento SEO, campañas por Google Ads, mantenimiento Mensual de página web, etc.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="card card-aside">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/design.png);"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Diseño gráfico</a></h4>
-                          <div class="text-muted">Identidad de marca, etiquetas, tarjetas, logotipos, folletos, catálogos, brochure, bolsas, papelería, cartas para bar/restaurant, digitalización de imágenes, etc.</div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-lightest hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/design.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Diseño gráfico</h4>
+                            <span class="text-muted small">
+                              Identidad de marca, etiquetas, tarjetas, logotipos, folletos, catálogos, brochure, bolsas, papelería, cartas para bar/restaurant, digitalización de imágenes, etc.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="card card-aside">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/marketing.png);"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Marketing digital</a></h4>
-                          <div class="text-muted">Diseñamos y aplicamos estrategias de marketing llevadas a cabo en medios digitales.</div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-lightest hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/marketing.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Marketing digital</h4>
+                            <span class="text-muted small">
+                              Diseñamos y aplicamos estrategias de marketing llevadas a cabo en medios digitales.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="card card-aside">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/producer.png);"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Generación de contenido</a></h4>
-                          <div class="text-muted">Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña</div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-lightest hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/producer.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Generación de contenidos</h4>
+                            <span class="text-muted small">
+                              Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="card card-aside border-warning">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/branding.png);"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Gestión de Proyectos</a> <i class="fe fe-star text-warning float-right" data-toggle="tooltip" title="" data-original-title="Somos especialistas"></i></h4>
-                          <div class="text-muted">El proceso para construir tu marca con personalidad e identidad propia.</div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-light text-white hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <div class="text-right text-primary">
+                            <i class="fe fe-star"></i>
+                          </div>
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/branding.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Gestión de proyectos</h4>
+                            <span class="text-muted small text-white">
+                              Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="card card-aside border-warning">
-                        <a href="#" class="card-aside-column" style="background-image: url(assets/images/icons/asesoria.png"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Asesoría</a> <i class="fe fe-star text-warning float-right" data-toggle="tooltip" title="" data-original-title="Somos especialistas"></i></h4>
-                          <div class="text-muted">Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña</div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-gray-light text-white hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <div class="text-right text-primary">
+                            <i class="fe fe-star"></i>
+                          </div>
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/asesoria.png" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Asesoría</h4>
+                            <span class="text-muted small text-white">
+                              Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-3 col-lg-3">
+                    <div class="card bg-white hvr-glow">
+                      <div class="card-body">
+                        <div class="mb-5">
+                          <img class="d-flex mr-5 mb-5 rounded" src="assets/images/icons/plus.png" width="150" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <h4>Ver todo</h4>
+                            <span class="text-muted small">
+                              Tenemos todo tipo de servicios y soluciones digitales para potenciar tu marca o empresa.
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
          
@@ -316,12 +397,15 @@
               <div class="card-header">
                 <h3 class="section-heading text-uppercase">portfolio</h3>
                 <div class="card-options">
-                  <small class="btn text-primary ml-2">Ver más</small>
+                  <span class="btn text-weight-bold text-orange text-uppercase ml-2 hvr-underline-from-right">Ver más</span>
                 </div>
               </div>
               <br>
-              <div class="row row-deck">
-                <div class="col-sm-4 col-lg-3">
+
+              <!-- Set up your HTML -->
+              <div class="owl-carousel">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="https://ditrabajo.com/" target="_blank" class="mb-3">
                       <img src="assets/images/capturas/ditrabajo.png" alt="Photo by Nathan Guerrero" class="rounded">
@@ -334,7 +418,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-lg-3">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="http://colombres-garmendia.com/" target="_blank" class="mb-3">
                       <img src="assets/images/capturas/colombresgarmendia.png" alt="Photo by Alice Mason" class="rounded">
@@ -347,7 +432,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-lg-3">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="http://www.exelsusoncologia.com/" target="_blank" class="mb-3">
                       <img src="assets/images/capturas/exelsus.png" alt="Photo by Nathan Guerrero" class="rounded">
@@ -360,7 +446,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-lg-3">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="http://www.groovepisodes.com/" target="_blank" class="mb-3">
                       <img src="assets/images/capturas/groov.png" alt="Photo by Nathan Guerrero" class="rounded">
@@ -373,7 +460,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-lg-3">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="http://www.exelsusoncologia.com/" target="_blank" class="mb-3">
                       <img src="assets/images/logo/nemesia.png" height="200" alt="Photo by Nathan Guerrero" class="rounded">
@@ -386,7 +474,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 col-lg-3">
+
+                <div class="item hvr-float-shadow">
                   <div class="card p-3">
                     <a href="http://www.groovepisodes.com/" target="_blank" class="mb-3">
                       <img src="assets/images/logo/aminooo.png" height="200" alt="Photo by Nathan Guerrero" class="rounded">
@@ -399,28 +488,30 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
-           <div class="bg-white">
+
+          <!-- <div class="bg-white">
             <div class="container py-3">
               <div class="">
                 <div class="card-header">
                   <h3 class="section-heading text-uppercase">Blog</h3>
                   <div class="card-options">
                     <small class="ml-2">Seguinos:</small>
-                    <div class="nav-item d-none d-md-flex">
+                    <div class="nav-item">
                       <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
-                        <i class="text-primary dropdown-icon fe fe-linkedin ml-1"></i>
+                        <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
                       </a>
                       <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
-                        <i class="text-primary dropdown-icon fe fe-facebook ml-1"></i>
+                        <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
                       </a>
                       <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
-                        <i class="text-primary dropdown-icon fe fe-instagram ml-1"></i>
+                        <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
                       </a>
                       <a href="https://twitter.com/CompaniaDigital" target="_blank">
-                        <i class="text-primary dropdown-icon fe fe-twitter ml-1"></i>
+                        <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
                       </a>
                     </div>
                   </div>
@@ -436,64 +527,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
-                      <div class="card">
-                        <a href="#"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you."></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Well, I didn't vote for you.</a></h4>
-                          <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                      <div class="card">
-                        <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">How do you know she is a witch?</a></h4>
-                          <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                      <div class="card">
-                        <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">Shut up!</a></h4>
-                          <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-  
-              <!-- <div class="card">
-                <div class="card-header">
-                  Hola, somos LA COMPANIA
-                </div>
-                <div class="card-body">
-                  Estamos listos para llevar a cabo cualquier proyecto tecnologico - digital.
-                  <br><br>
-                  Contamos con un equipo ampliamente capacitado para cubrir todas las areas que necesites cubrir
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  Hacemos
-                </div>
-                <div class="card-body">
-                  marketing
-                  <br>
-                  estrategias
-                  <br>
-                  asesoria
-                </div>
-              </div> -->
             </div>
-          </div>
+          </div> -->
+
+
+
         </div>
       </div>
-      <div class="footer bg-white">
+      <div class="footer bg-three">
         <div class="container">
           <div class="row">
 
@@ -504,18 +548,18 @@
               <p class="mt-2">Somos consultores especialistas en crear soluciones digitales</p>
               <hr class="mb-3 mt-4">
               <h4>Redes sociales</h4>
-              <ul class="social-links list-inline mb-0 mt-2">
+              <ul class="social-links list-inline mt-2">
                 <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook text-secondary"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter text-secondary"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="1234567890"><i class="fa fa-phone"></i></a>
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="1234567890"><i class="fa fa-phone text-secondary"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="@skypename"><i class="fa fa-skype"></i></a>
+                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="@skypename"><i class="fa fa-skype text-secondary"></i></a>
                 </li>
               </ul>
             </div>
@@ -582,6 +626,34 @@
             </div>
           </div>
         </div>
+
+        <script src="./assets/js/vendors/jquery-3.2.1.min.js"></script>
+        <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/owlcarousel/owl.carousel.js"></script>
+
+        <script type="text/javascript">
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+              items:4,
+              loop:true,
+              margin:10,
+              autoplay:true,
+              autoplayTimeout:2000,
+              autoplayHoverPause:true
+          });
+          $('.play').on('click',function(){
+              owl.trigger('play.owl.autoplay',[1000])
+          })
+          $('.stop').on('click',function(){
+              owl.trigger('stop.owl.autoplay')
+          })
+        </script>
+
+        <script type="text/javascript">
+          $('#btn-proximamente').click(function() {
+              swal("Hello world!");
+            })
+        </script>
       </footer>
     </div>
   </body>
