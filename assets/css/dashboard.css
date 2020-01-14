@@ -10388,14 +10388,14 @@ body.fixed-header .header {
 
 .footer {
   background: #fff;
-  border-top: 1px solid rgba(0, 40, 100, 0.12);
+  border-top: 3px solid rgba(232, 174, 0, 0.12);
   font-size: 0.875rem;
   padding: 1.25rem 0;
-  color: #9aa0ac;
+  color: #f8f8f8;
 }
 
 .footer a:not(.btn) {
-  color: #6e7687;
+  color: #f8f8f8;
 }
 
 @media print {
@@ -11563,7 +11563,7 @@ button.bg-lime:focus {
 }
 
 .icon {
-  color: #9aa0ac !important;
+  color: #868e96 !important;
 }
 
 .icon i {
@@ -18661,6 +18661,26 @@ svg {
   color: black !important;
 }
 
+
+
 .anav:hover {
   color: #ffda00 !important;
+  border-color: #ffda00 !important;
+}
+
+.noselect {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.mn-6 {
+  margin-top: -6%;
+}
+
+.card-index {
+  height: 330px;
 }
