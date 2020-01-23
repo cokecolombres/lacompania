@@ -18684,3 +18684,7 @@ user-select: none;
 .card-index {
   height: 330px;
 }
+
+.rounded-circles {
+  border-radius: 40px;
+}
