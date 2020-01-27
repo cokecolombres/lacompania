@@ -18615,6 +18615,10 @@ svg {
   width: 100px;
 }
 
+.iconmax-200 {
+  width: 400px;
+}
+
 .max-w400 {
     max-width: 200px;
   }
