@@ -36,15 +36,17 @@
     <!-- Input Mask Plugin -->
     <script src="./assets/plugins/input-mask/plugin.js"></script>
   </head>
-  <body class="">
+  <body class="">    
     <div class="page">
       <div class="page-main">
-        <div class="header py-4 bg-dark">
+        <div class="header py-4 bg-white">
           <div class="container">
             <div class="d-flex">
-              <a class="header-brand text-white" href="./index.html">
-                La compañía <span class="text-primary">digital</span>
+              <a href="./index.html">
+                <img src="assets/images/logo/logo11.png" class="header-brand-img" alt="La compañía digital">
               </a>
+
+              <!-- La compañía <span class="text-primary">digital</span> -->
 
               <div class="d-flex order-lg-2 ml-auto">
                 <div class="nav-item d-none d-md-flex">
@@ -60,16 +62,14 @@
                   <a href="https://twitter.com/CompaniaDigital" target="_blank">
                     <i class="dropdown-icon fe fe-twitter ml-1"></i>
                   </a>
+                  <!-- <a href="https://www.youtube.com/channel/UCd4Rh7AD4lnpr1AQ5XmOucg" target="_blank">
+                    <img src="assets/images/icons/youtube_icon.png" width="20">
+                  </a> -->
                 </div>
-                <a class="nav-link icon" href="FAQs.html">
-                  FAQ's
+                <a class="nav-link icon d-none d-md-flex" href="FAQs.html">
+                  Preguntas Frecuentes
                 </a>
-                <a class="nav-link icon" href="about.html">
-                  Nosotros
-                </a>
-
-                <a href="contact.html" class="btn btn-primary">Contacto</a>
-            
+                <a href="contact.html" class="btn btn-outline-secondary d-none d-md-flex hvr-float-shadow">Contacto</a>
               </div>
               <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
                 <span class="header-toggler-icon"></span>
@@ -77,457 +77,182 @@
             </div>
           </div>
         </div>
-        <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="header collapse d-lg-flex p-0 sticky-top bg-three" id="headerMenuCollapse">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-3 ml-auto">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row float-right">
-                  <li class="nav-item">
-                    <a href="./tucuman.html" class="nav-link"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
+                  <!-- <li class="nav-item">
+                    <a href="http://tucuman.digital" target="_blank" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
+                  </li> -->
+                  <li class="nav-item d-none d-lg-flex">
+                    <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-book"></i> Blog</a>
                   </li>
                 </ul>
               </div>
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link"><i class="fe fe-home"></i> Inicio</a>
+                    <a href="./index.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="fe fe-box"></i> Servicios</a>
+                    <!-- <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a> -->
+                    <a href="javascript:void(0)" class="nav-link anav text-white" data-toggle="dropdown" aria-expanded="false"><i class="fe fe-box"></i> Servicios</a>
                     <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
-                      <a href="web.html" class="dropdown-item ">Diseño Web</a>
-                      <a href="diseño.html" class="dropdown-item ">Diseño Gráfico</a>
-                      <a href="marketing.html" class="dropdown-item ">Marketing Digital</a>
-                      <a href="gestion.html" class="dropdown-item ">Gestion de proyectos</a>
-                      <a href="contenido.html" class="dropdown-item ">Generacion de contenido</a>
-                      <a href="asesoria.html" class="dropdown-item ">Asesoría para tu negocio o empresa</a>
+                      <a href="web.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Diseño Web</strong>
+                        </div>
+                      </a>
+                      <a href="diseño.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Diseño Gráfico</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="marketing.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Marketing Digital</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="gestion.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-dark"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Gestion de proyectos</strong>
+                            <!-- <div class="small text-muted">De todo tipo</div> -->
+                          </div>
+                      </a>
+                      <a href="contenido.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Generación de contenido</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="asesoria.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Asesoría para tu negocio o empresa</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
+                      <a href="secondary.html" class="dropdown-item d-flex p-1">
+                        <div class="col-1">
+                          <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
+                        </div>
+                        <div class="col-11">
+                          <strong>Servicios secundarios</strong>
+                          <!-- <div class="small text-muted">De todo tipo</div> -->
+                        </div>
+                      </a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link"><i class="fe fe-list"></i> Promociones</a>
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Promociones</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./opportunities.html" class="nav-link"><i class="fe fe-briefcase"></i> Oportunidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./blog.html" class="nav-link"><i class="fe fe-book"></i> Blog</a>
+                    <a href="./opportunities.html" class="nav-link anav text-white"><i class="fe fe-briefcase"></i> Oportunidades</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </div>   
 
-        </div>    
-
-        </div>   
-
-        <div class="carousel-inner">            
-            <img class="d-block w-100" alt="" src="assets/images/world.jpg" data-holder-rendered="true">
-            <div class="carousel-item d-none d-md-block"></div>
-            <div class="carousel-caption mb-8">
-              <h3>Impulsamos y potenciamos marcas, negocios y empresas</h3>
-              <p>Trabajamos con las tecnicas y herramientas digital más innovadoras</p>
-            </div>
-        </div>        
-
-        <div class="my-3 my-md-5">
-          <div class="container">
-            <div class="card-header">
-              Hola
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-4 col-lg-4">
-                  <div class="card p-3">
-                    <a href="javascript:void(0)" class="mb-3">
-                      <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
-                    </a>
-                    <div class="d-flex align-items-center px-2">
-                      <div>
-                        <div>Nemesia</div>
-                        <small class="d-block text-muted">Logo, publicaciones, menu</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-lg-4">
-                  <div class="card p-3">
-                    <a href="javascript:void(0)" class="mb-3">
-                      <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
-                    </a>
-                    <div class="d-flex align-items-center px-2">
-                      <div>
-                        <div>Nemesia</div>
-                        <small class="d-block text-muted">Logo, publicaciones, menu</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-lg-4">
-                  <div class="card p-3">
-                    <a href="javascript:void(0)" class="mb-3">
-                      <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
-                    </a>
-                    <div class="d-flex align-items-center px-2">
-                      <div>
-                        <div>Nemesia</div>
-                        <small class="d-block text-muted">Logo, publicaciones, menu</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <header class="bg-primary py-5 ">
+          <div class="container h-100">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-12 noselect">
+                <h1 class="display-4 text-dark mt-5 mb-2">Nuestros servicios</h1>
+                <p class="lead mb-5 text-dark">Todo lo que <b>necesita tu negocio</b> te lo ofrece La Compañía Digital</p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Servicios principales</h3>  
-              </div>
-              <div class="card-body">
-                <div class="row row-deck">
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-green"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-green mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a class="" data-toggle="modal" data-target="#exampleModalScrollable" href="javascript:void(0)">Marketing Digital</a></h4>
-                            <!-- Modal -->
-                              <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalScrollableTitle">Listado de servicios</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                      <div class="col-md-12 col-lg-12">
-                                        <div class="card-body o-auto" style="height: 25rem">
-                                           <ul class="list-unstyled list-separated">
-                                             <li class="list-separated-item">
-                                               <div class="row align-items-center">                          
-                                                 <div class="col">
-                                                  <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i><strong>Community manager.</strong> 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Inbound Marketing. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Buyer de persona. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Análisis de la competencia. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Marketing de contenido. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Analítica Web. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Innovación con tendencias. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Influencer del mercado. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Definición de palabras clave. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> SEO. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Publicidad Online. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Social Media. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Informes con estadísticas. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Email marketing. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> E-commerce. 
-                                                   </div>
-                                                   <div class="alert alert-icon alert-success" role="alert">
-                                                     <i class="fe fe-check mr-2" aria-hidden="true"></i> Vídeo Marketing. 
-                                                   </div>
-
-                                                 </div>                          
-                                               </div>
-                                             </li>
-                                           </ul>
-                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            <!-- ------ -->
-
-                            <small class="text-muted">Para ayudarte a lograr tus objetivos</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Investigación, planificacion y desarrollo de productos, análisis analítico, estrategia de contenido, estrategia de campaña.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-blue"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-blue mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diseño Gráfico</a>
-                            
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#"> Identidad de marca</a>
-                                <a class="dropdown-item" href="#"> Identidad de marca digital</a>
-                                <a class="dropdown-item" href="#"> Etiquetas, tarjetas, folletos, etc.</a>
-                                <a class="dropdown-item" href="#"> Logotipos e isotipo</a>
-                                <a class="dropdown-item" href="#"> Brochure, catálogos de productos</a>
-                                <a class="dropdown-item" href="#"> Cartas para bar/restaurant</a>
-                                <a class="dropdown-item" href="#"> Bolsas personalizadas</a>
-                                <a class="dropdown-item" href="#"> Digitalización de imágenes</a>
-                                <a class="dropdown-item" href="#"> Rediseño de logo</a>
-
-                            </div>
-                              <br>
-                            <small class="text-muted">Te ayudamos a desarrollar tu marca</small>
-                            
-
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Estrategia de marca, comunicación, diseño de logotipos, sistema de identidad visual, pautas e identidad de marca.c
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-red"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-red mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Diseño Web</a></h4>
-                            <small class="text-muted">Para ayudarte a lograr tus objetivos</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Dirección creativa, experiencia del usuario (UX), interfaz de usuario (UI) y diseño visual, creación de prototipos y mockups.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-teal"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-teal mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Generación de Contenido</a></h4>
-                            <small class="text-muted">Para ayudarte a lograr tus objetivos</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Arquitectura de sistemas, desarrollo front-end, desarrollo back-end, comercio electrónico (e-commerce), WordPress.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-yellow"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-yellow mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Gestión de Proyectos <small>de todo tipo</small></a></h4>
-                            <small class="text-muted">Para ayudarte a lograr tus objetivos</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Fotografía, video, redacción, contenido social, ilustraciones.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-purple"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-purple mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Asesoría <small>para tu negocio o empresa</small></a></h4>
-                            <small class="text-muted">Para ayudarte a lograr tus objetivos</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Campañas de redes sociales, campañas de correo electrónico, anuncios pagos, SEO, marketing de contenidos, analytics.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header p-3">
-                <h3 class="card-title">Servicios secundarios</h3>
-              </div>
-              <div class="card-body">
-                <div class="row row-deck">
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-secondary"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-yellow mr-3">
-                            <i class="fe fe-credit-card"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">App’s Mobile</a></h4>
-                            <small class="text-muted">Para todo tipo de empresas u organizaciones</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Mercado pago
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-secondary"></div>
-                      <div class="card-header p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-yellow mr-3">
-                            <i class="fe fe-home"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Google My Business</a></h4>
-                            <small class="text-muted">Airbnb y Booking</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Registramos tu propiedad en Airbnb para que puedas aprovechar los beneficios
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                      <div class="card-status bg-secondary"></div>
-                      <div class="card-header p-3 p-3">
-                        <div class="d-flex align-items-center">
-                          <span class="stamp stamp-md bg-yellow mr-3">
-                            <i class="fe fe-home"></i>
-                          </span>
-                          <div>
-                            <h4 class="m-0"><a href="javascript:void(0)">Plataformas de Reserva</a></h4>
-                            <small class="text-muted">Airbnb y Booking</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        Campañas de redes sociales, campañas de correo electrónico, anuncios pagos, SEO, marketing de contenidos, analytics.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Somos especialistas en...</h3>  
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card mr-5 bg-primary">                  
-                  <div class="card-header">
-                    <i class="fe fe-check-square text-white mr-2"></i>
-                    <h3 class="card-title text-white">Gestión de Proyectos</h3>                    
-                  </div>
-                  <div class="card-body text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
-                  </div>
-                </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card mr-5 bg-secondary">
-                  <div class="card-header">
-                    <i class="fe fe-code text-white mr-2"></i>
-                    <h3 class="card-title text-white">Diseño Web</h3>                    
-                  </div>
-                  <div class="card-body text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
-                  </div>
-                </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="card bg-danger">
-                  <div class="card-header">
-                    <i class="fe fe-trending-up text-white mr-2"></i>
-                    <h3 class="card-title text-white">Marketing Digital</h3>                    
-                  </div>
-                  <div class="card-body text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
-                  </div>
-                </div>
-                  </div>
-                </div>            
-              </div> 
-            </div>  
           </div>
-      </div>
-      <section class="bg-primary mb-6">
-      <div class="container">
-        <div class="row">    
-        <div class="col-lg-6 col-sm-12 text-lg-left offset-md-2 text-center text-white mt-6">
-          <h2>
-              No esperes más!
-            </h2>
+        </header>
 
-          <p>
-            Te estamos esperando para trabajar juntos.
-          </p>
-
+        <div class="">
+          <div class="row">
+            <div class="col-12 d-flex">
+              <a href="web.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/webdeveloper.jpg" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Desarrollo Web</h1>
+                  </div>
+                </div>
+              </a>
+              <a href="diseño.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/design1.jpg" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Diseño Gráfico</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 d-flex">
+              <a href="marketing.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/marketer.jpg" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Marketing Digital</h1>
+                  </div>
+                </div>
+              </a>
+              <a href="gestion.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/management.jpg" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Gestión de Proyectos</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 d-flex">
+              <a href="contenido.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/content.jpg" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Generación de Contenido</h1>
+                  </div>
+                </div>
+              </a>
+              <a href="asesoria.html" type="button" class="col-6">
+                <div class="carousel">
+                  <img class="d-block w-100" alt="" src="assets/images/asesoria1.png" data-holder-rendered="true">
+                  <div class="carousel-item-background d-none d-md-block services"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Asesoría para tu negocio</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="col-lg-3 col-sm-12 text-lg-left mt-7">
-          <a href="#" class="btn btn-pill btn-secondary">Contactanos</a>
-        </div>        
-      </div>
-      </div>
+
       </div>
     
     </div>

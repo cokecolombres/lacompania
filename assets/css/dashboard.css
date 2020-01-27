@@ -18672,6 +18672,11 @@ svg {
   border-color: #ffda00 !important;
 }
 
+.services:hover {
+  backdrop-filter: brightness(60%);
+  transition: all 1s ease 0s;
+}
+
 .noselect {
 -webkit-touch-callout: none;
 -webkit-user-select: none;
@@ -18684,6 +18689,14 @@ user-select: none;
 .mn-6 {
   margin-top: -6%;
 }
+.mn-20 {
+  margin-top: -20%;
+}
+
+.imgbanner {
+  filter: brightness(60%);
+}
+
 
 .card-index {
   height: 330px;
