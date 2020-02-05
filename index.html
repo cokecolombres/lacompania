@@ -76,6 +76,23 @@
       background-repeat: no-repeat;
     }
 
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
   </style>
   <body class="">
     <div class="page">
@@ -127,6 +144,9 @@
                     <a href="http://tucuman.digital" target="_blank" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
                   </li> -->
                   <li class="nav-item d-none d-lg-flex">
+                    <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-info"></i> Noticias</a>
+                  </li>
+                  <li class="nav-item d-none d-lg-flex">
                     <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-book"></i> Blog</a>
                   </li>
                 </ul>
@@ -136,73 +156,136 @@
                   <li class="nav-item">
                     <a href="./index.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
                   </li>
-                  <li class="nav-item">
-                    <!-- <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a> -->
-                    <a href="javascript:void(0)" class="nav-link anav text-white" data-toggle="dropdown" aria-expanded="false"><i class="fe fe-box"></i> Servicios</a>
-                    <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
-                      <a href="web.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Diseño Web</strong>
-                        </div>
-                      </a>
-                      <a href="diseño.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Diseño Gráfico</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="marketing.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Marketing Digital</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="gestion.html" class="dropdown-item d-flex p-1">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link anav text-white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-box"></i>
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarDropdownMenuLink">
+                      <li>
+                        <a href="web.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Desarrollo & Diseño Web</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="diseño.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Diseño Gráfico</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="marketing.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Marketing Digital</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="contenido.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Generación de contenidos digitales</strong>
+                          </div>
+                        </a>
+                      </li>
+
+                      <div class="dropdown-divider"></div>
+
+                      <li>
+                        <a href="asesoria.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Asesoría</strong>
+                          </div>
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="gestion.html" class="dropdown-item d-flex p-1">
                           <div class="col-1">
                             <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-dark"></i></span>
                           </div>
                           <div class="col-11">
                             <strong>Gestion de proyectos</strong>
-                            <!-- <div class="small text-muted">De todo tipo</div> -->
                           </div>
-                      </a>
-                      <a href="contenido.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Generación de contenido</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="asesoria.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Asesoría para tu negocio o empresa</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="secondary.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Servicios secundarios</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                    </div>
+                        </a>
+                      </li>
+
+                      <div class="dropdown-divider"></div>
+
+                      <li>
+                        <a href="secondary.html" class="dropdown-item d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Servicios secundarios</strong>
+                          </div>
+                        </a>
+                      </li>
+
+
+                      <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-item dropdown-toggle d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Servicios secundarios</strong>
+                          </div>
+                        </a>
+
+                        <ul class="dropdown-menu p-1">
+                          <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                          <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+
+
+                          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                              <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                              <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-item dropdown-toggle d-flex p-1">
+                          <div class="col-1">
+                            <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                          </div>
+                          <div class="col-11">
+                            <strong>Marketing Digital</strong>
+                          </div>
+                        </a>
+
+                        <ul class="dropdown-menu p-1">
+                          <li><a class="dropdown-item" href="#">Hola broder</a></li>
+                          <li><a class="dropdown-item" href="#">Brodar 2</a></li>
+                        </ul>
+                      </li> -->
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Promociones</a>
@@ -734,6 +817,22 @@
           $('.stop').on('click',function(){
               owl.trigger('stop.owl.autoplay')
           })
+
+          $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+  if (!$(this).next().hasClass('show')) {
+    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+  }
+  var $subMenu = $(this).next(".dropdown-menu");
+  $subMenu.toggleClass('show');
+
+
+  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+    $('.dropdown-submenu .show').removeClass("show");
+  });
+
+
+  return false;
+});
         </script>
 
         <script type="text/javascript">
