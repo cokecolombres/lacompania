@@ -18626,6 +18626,9 @@ svg {
 .bg-primary {
   background: #ffda00 !important;
 }
+.bg-primary-light {
+  background: #FFE864 !important;
+}
 .bg-secondary {
   background: #e8ae00 !important;
 }
@@ -18704,4 +18707,33 @@ user-select: none;
 
 .rounded-circles {
   border-radius: 40px;
+}
+
+.check {
+  max-width: 60px;
+}
+.jquery {
+  margin-left: -25%;
+}
+.animatecss {
+  margin-left: -70%;
+}
+.git {
+  margin-left: -60%;
+}
+
+img.bn {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);  
+}
+
+img.bn:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);  
 }
