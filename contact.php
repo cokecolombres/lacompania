@@ -256,20 +256,22 @@
                       <input type="text" class="form-control" name="example-text-input" id="demo-name">
                     </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputAddress">Dirección</label>
-                    <input type="text" class="form-control" id="inputAddress">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label class="form-label">What's App</label>
-                    <input type="text" placeholder="(381) 000-0000" id="whatsapp" name="field-name" class="form-control col-12" data-mask="(000) 000-0000" data-mask-clearifnotmatch="true" autocomplete="on" maxlength="14">
+                  <div class="d-flex">
+                    <div class="form-group col-md-6">
+                      <label for="inputAddress">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label class="form-label">What's App</label>
+                      <input type="text" placeholder="(381) 000-0000" id="whatsapp" name="field-name" class="form-control col-12" data-mask="(000) 000-0000" data-mask-clearifnotmatch="true" autocomplete="on" maxlength="14">
+                    </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputCity">Ciudad</label>
                       <input type="text" class="form-control" id="inputCity">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                       <label for="inputState">País</label>
                       <select id="inputState" class="form-control">
                         <option selected>Elige...</option>
@@ -284,11 +286,11 @@
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck">
                       <label class="form-check-label" for="gridCheck">
-                        Sí, quiero.
+                        Te contactamos?
                       </label>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary text-dark">Sign in</button>
+                  <button type="submit" class="btn btn-primary text-dark">Enviar</button>
                 </form>
               </div>
             </div>
@@ -303,6 +305,7 @@ $email = $_POST['inputEmail4'];
 $pais = $_POST['inputState'];
 $celular = $_POST['whatsapp'];
 $direccion = $_POST['inputAddress'];
+$noscontactamos = $_POST['gridCheck'];
 
 $to = $myemail;
 $email_subject = "Nuevo mensaje: de $name";
