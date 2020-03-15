@@ -70,7 +70,7 @@
     .masthead {
       height: 90vh;
       min-height: 500px;
-      background-image: url('assets/images/technology.jpg');
+      /*background-image: url('assets/images/technology.jpg');*/
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -92,6 +92,58 @@
       left: 100%;
       margin-left: .1rem;
       margin-right: .1rem;
+    }
+
+
+    .bottombar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #363F51;
+      border-top: 1px solid rgba(0, 40, 100, 0.12);
+      z-index: 100;
+      font-size: 1rem;
+      padding: .75rem 0;
+      color: #fff;
+      box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.05);
+    }
+
+    .bottombar-close {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      color: #9aa0ac;
+      transition: .3s color;
+      display: block;
+      margin-left: 1rem;
+    }
+
+    .bottombar-close:hover {
+      color: #6e7687;
+    }
+
+    .bottombar-image {
+      position: relative;
+      display: block;
+      margin: 0 1rem 0 0;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image {
+        margin: -176px 1rem -90px -25px;
+      }
+    }
+
+    .bottombar-image img {
+      width: 109px;
+      display: block;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image img {
+        width: 218px;
+      }
     }
   </style>
   <body class="">
@@ -143,17 +195,20 @@
                   <!-- <li class="nav-item">
                     <a href="http://tucuman.digital" target="_blank" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
                   </li> -->
-                  <li class="nav-item d-none d-lg-flex">
+                  <!-- <li class="nav-item d-none d-lg-flex">
                     <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-info"></i> Noticias</a>
                   </li>
                   <li class="nav-item d-none d-lg-flex">
                     <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-book"></i> Blog</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a href="./opportunities.html" class="nav-link anav text-white"><i class="fe fe-briefcase"></i> Oportunidades</a>
                   </li>
                 </ul>
               </div>
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a href="./index.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
@@ -202,9 +257,7 @@
                           </div>
                         </a>
                       </li>
-
                       <div class="dropdown-divider"></div>
-
                       <li>
                         <a href="asesoria.html" class="dropdown-item d-flex p-1">
                           <div class="col-1">
@@ -215,7 +268,6 @@
                           </div>
                         </a>
                       </li>
-                      
                       <li>
                         <a href="gestion.html" class="dropdown-item d-flex p-1">
                           <div class="col-1">
@@ -226,10 +278,7 @@
                           </div>
                         </a>
                       </li>
-
                       <div class="dropdown-divider"></div>
-
-
                       <li class="dropdown-submenu">
                         <a href="#" class="dropdown-item dropdown-toggle d-flex p-1">
                           <div class="col-1">
@@ -239,7 +288,6 @@
                             <strong>Servicios secundarios</strong>
                           </div>
                         </a>
-
                         <ul class="dropdown-menu p-1">
                           <li><a class="dropdown-item" href="app.html">App's Mobile</a></li>
                           <li><a class="dropdown-item" href="google.html">Google My Business</a></li>
@@ -247,45 +295,28 @@
                           <li><a class="dropdown-item" href="spotify.html">Spotify</a></li>
                           <li><a class="dropdown-item" href="digitalizacion.html">Digitalización de Procesos</a></li>
                           <li><a class="dropdown-item" href="email.html">E-mail Corporativo</a></li>
-
-                          <!--
-                          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                              <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                            </ul>
-                          </li>
-                          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                              <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                            </ul>
-                          </li>
-                        -->
                         </ul>
                       </li>
-                      <!-- <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-item dropdown-toggle d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Marketing Digital</strong>
-                          </div>
-                        </a>
-
-                        <ul class="dropdown-menu p-1">
-                          <li><a class="dropdown-item" href="#">Hola broder</a></li>
-                          <li><a class="dropdown-item" href="#">Brodar 2</a></li>
-                        </ul>
-                      </li> -->
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Promociones</a>
+                  </li> -->
+
+                 <li class="nav-item">
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./opportunities.html" class="nav-link anav text-white"><i class="fe fe-briefcase"></i> Oportunidades</a>
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-calendar"></i> Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-folder-plus"></i> Herramientas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-share-2"></i> Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Blog</a>
                   </li>
                 </ul>
               </div>
@@ -294,15 +325,15 @@
         </div>
 
 
-        <div class="floatingBtn">
+        <!-- <div class="floatingBtn">
           <a href="https://wa.me/5493814788633?text=Hola,%20te%20escribo%20por%20la%20compania.." target="_blank">
             <button id="wspBtn" type="button" class="btn-success"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 45px"></i></button>
           </a>  
-        </div>
+        </div> -->
 
 
 
-        <header class="masthead">
+        <!-- <header class="masthead">
           <div class="container h-100">
             <div class="row h-100 align-items-center">
               <div class="col-12 text-center bg-gray-light py-5 mt-9  scrollanimation animated bounceInUp adr-4 adl-1" style="opacity: 0.80">
@@ -313,7 +344,104 @@
               <img src="assets/images/logo/logo-06.png" class="col-6 offset-3 col-md-6 col-xl-2 offset-xl-5 scrollanimation animated bounceInUp adr-5 adl-2">
             </div>
           </div>
-        </header>
+        </header> -->
+
+
+          <div class="container py-5">
+            <div class="row row-cards row-deck">
+              <div class="col-md-6">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/david-klaasen-54203-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                    <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Shut up!</a></h4>
+                    <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Shut up!</a></h4>
+                    <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 order-lg-1 mb-4">
+                  <!-- Getting started -->
+                  <div class="list-group list-group-transparent mb-0">
+                    <a href="../docs/index.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-flag"></i></span>Introduction</a>
+                  </div>
+                  <!-- Components -->
+                  <div class="list-group list-group-transparent mb-0">
+                    <a href="../docs/alerts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-alert-triangle"></i></span>Alerts</a>
+                    <a href="../docs/avatars.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-user"></i></span>Avatars</a>
+                    <a href="../docs/buttons.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-plus-square"></i></span>Buttons</a>
+                    <a href="../docs/colors.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-feather"></i></span>Colors</a>
+                    <a href="../docs/cards.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-image"></i></span>Cards</a>
+                    <a href="../docs/charts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-pie-chart"></i></span>Charts</a>
+                    <a href="../docs/form-components.html" class="list-group-item list-group-item-action active"><span class="icon mr-3"><i class="fe fe-check-square"></i></span>Form components</a>
+                    <a href="../docs/tags.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-tag"></i></span>Tags</a>
+                    <a href="../docs/typography.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-type"></i></span>Typography</a>
+                  </div>
+
+                  <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary mt-6">
+                    <i class="fe fe-github mr-2"></i>Browse source code
+                  </a>
+                  
+                  <div class="d-none d-lg-block mt-6">
+                    <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/form-components.md" class="text-muted">Hacer sugerencias</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row row-cards row-deck">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/david-klaasen-54203-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                    <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you."></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Well, I didn't vote for you.</a></h4>
+                    <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">How do you know she is a witch?</a></h4>
+                    <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Shut up!</a></h4>
+                    <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 
         <!-- Large modal -->
@@ -339,9 +467,48 @@
 
         <div class="">
 
+          <div class="bg-white">
+            <div class="container py-5">
+              <div class="">
+                <div class="card-header">
+                  <h3 class="section-heading text-uppercase">Blog</h3>
+                  <div class="card-options">
+                    <small class="ml-2">Seguinos:</small>
+                    <div class="nav-item">
+                      <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
+                      </a>
+                      <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                      </a>
+                      <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                      </a>
+                      <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row row-cards row-deck">
+                    <div class="col-sm-6 col-xl-3">
+                      <div class="card">
+                        <a href="#"><img class="card-img-top" src="./demo/photos/david-klaasen-54203-500.jpg" alt="And this isn't my nose. This is a false one."></a>
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           
 
-          <div class="bg-white">
+          <!-- <div class="bg-white">
             <div class="container py-5">
               <div class="card-header">
                 <h3 class="section-heading text-uppercase">Nuestros servicios</h3>
@@ -354,7 +521,6 @@
               <div class="card-body">
                 <div class="row row-deck row-cards text-center">
                   <a href="web.html" class="col-sm-4 col-md-6 col-lg-3">
-                  <div>
                     <div class="card bg-gray-lightest hvr-glow card-index">
                       <div class="card-body">
                         <div class="mb-5">
@@ -368,10 +534,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                   </a>
                   <a href="diseño.html" class="col-sm-4 col-md-6 col-lg-3">
-                  <div class="">
                     <div class="card bg-gray-lightest hvr-glow card-index">
                       <div class="card-body">
                         <div class="mb-5">
@@ -385,10 +549,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                   </a>
                   <a href="marketing.html" class="col-sm-4 col-md-6 col-lg-3">
-                  <div class="">
                     <div class="card bg-gray-lightest hvr-glow card-index">
                       <div class="card-body">
                         <div class="mb-5">
@@ -402,7 +564,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                   </a>
                   <a href="contenido.html" class="col-sm-4 col-md-6 col-lg-3">
                   <div class="">
@@ -497,7 +658,7 @@
                   </a>
               </div>
             </div>
-          </div>
+          </div> -->
          
         <div class="bg-gray-lightest py-6">
           <div class="container">
@@ -603,46 +764,30 @@
         </div>
       </div>
 
-          <!-- <div class="bg-white">
-            <div class="container py-3">
-              <div class="">
-                <div class="card-header">
-                  <h3 class="section-heading text-uppercase">Blog</h3>
-                  <div class="card-options">
-                    <small class="ml-2">Seguinos:</small>
-                    <div class="nav-item">
-                      <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
-                      </a>
-                      <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
-                      </a>
-                      <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
-                      </a>
-                      <a href="https://twitter.com/CompaniaDigital" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
-                      </a>
-                    </div>
-                  </div>
+
+        <div class="bottombar js-bottombar" style="">
+            <a href="#" class="bottombar-close js-bottombar-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </a>
+            <div class="container position-relative d-flex align-items-center">
+              <a href="http://lacompaniadigital.com/" class="bottombar-image" target="_blank">
+                <picture>
+                  <source srcset="assets/images/aprovechaInternet.png" type="image/webp">
+                  <source srcset="assets/images/aprovechaInternet.png" type="image/jpeg">
+                  <img src="assets/images/aprovechaInternet.png" alt="">
+                </picture>
+              </a>
+              <div class="d-lg-flex flex-fill align-items-center">
+                <div class="mr-2">
+                  Te ayudamos a <b>crecer y potenciar tu negocio!</b> <b class="text-orange"> Somos la compañía digital que necesitas</b>
                 </div>
-                <div class="card-body">
-                  <div class="row row-cards row-deck">
-                    <div class="col-sm-6 col-xl-3">
-                      <div class="card">
-                        <a href="#"><img class="card-img-top" src="./demo/photos/david-klaasen-54203-500.jpg" alt="And this isn't my nose. This is a false one."></a>
-                        <div class="card-body d-flex flex-column">
-                          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
-                          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class=" ml-auto mt-2 mt-lg-0">
+                  <a href="http://lacompaniadigital.com/" class="btn btn-sm btn-green text-nowrap" target="_blank">Más Información</a>
                 </div>
               </div>
             </div>
-          </div> -->
-
+          </div>
+          
 
 
         </div>
