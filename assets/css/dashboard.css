@@ -18721,6 +18721,9 @@ user-select: none;
 .git {
   margin-left: -60%;
 }
+.img-blog {
+  width: 100%;
+}
 
 img.bn {
   -webkit-filter: grayscale(100%);
