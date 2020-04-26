@@ -12,10 +12,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo/favicon.png" />
+    <link rel="icon" href="./assets/images/logo/lacompania.png" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo/lacompania.png" />
     <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>La compañía digital - Servicios tecnológicos de todo tipo</title>
+    <title>LA COMPAÑÍA DIGITAL - Impulsamos tu vida con tencnología</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <script src="./assets/js/require.min.js"></script>
@@ -27,6 +27,21 @@
     <!-- Dashboard Core -->
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
+    <!-- Animaciones hover -->
+    <link href="./assets/css/hover-min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
+
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.css">
+
     <!-- c3.js Charts Plugin -->
     <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
     <script src="./assets/plugins/charts-c3/plugin.js"></script>
@@ -35,44 +50,145 @@
     <script src="./assets/plugins/maps-google/plugin.js"></script>
     <!-- Input Mask Plugin -->
     <script src="./assets/plugins/input-mask/plugin.js"></script>
+    <script src="https://kit.fontawesome.com/cfdfa8e51e.js" crossorigin="anonymous"></script>
   </head>
+  <style type="text/css">
+    .floatingBtn {
+      position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 1000;
+    }
+
+    #wspBtn {
+      width: 56px;
+        min-width: 56px;
+        height: 56px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .masthead {
+      height: 90vh;
+      min-height: 500px;
+      /*background-image: url('assets/images/technology.jpg');*/
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+
+
+    .bottombar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #363F51;
+      border-top: 1px solid rgba(0, 40, 100, 0.12);
+      z-index: 100;
+      font-size: 1rem;
+      padding: .75rem 0;
+      color: #fff;
+      box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.05);
+    }
+
+    .bottombar-close {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      color: #9aa0ac;
+      transition: .3s color;
+      display: block;
+      margin-left: 1rem;
+    }
+
+    .bottombar-close:hover {
+      color: #6e7687;
+    }
+
+    .bottombar-image {
+      position: relative;
+      display: block;
+      margin: 0 1rem 0 0;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image {
+        margin: -176px 1rem -90px -25px;
+      }
+    }
+
+    .bottombar-image img {
+      width: 109px;
+      display: block;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image img {
+        width: 218px;
+      }
+    }
+    
+    .bg-cover {
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      z-index: -2;
+    }
+
+    .bg-cover {
+        background-image: url('');
+    }
+  </style>
   <body class="">
     <div class="page">
       <div class="page-main">
-        <div class="header py-4 bg-white">
+        <div class="header py-4 bg-three">
           <div class="container">
             <div class="d-flex">
-              <a href="./index.html">
-                <img src="assets/images/logo/lacompaniabanda2.png" class="header-brand-img" alt="La compañía digital">
+              <a class="header-brand" href="./index.html">
+                <img src="assets/images/logo/logo-06.png" class="header-brand-img" alt="LA COMPAÑÍA DIGITAL">
               </a>
-
               <div class="d-flex order-lg-2 ml-auto">
                 <div class="nav-item d-none d-md-flex">
                   <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
-                    <i class="dropdown-icon fe fe-linkedin ml-1"></i>
+                    <i class="dropdown-icon fe fe-linkedin ml-1 text-white"></i>
                   </a>
                   <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
-                    <i class="dropdown-icon fe fe-facebook ml-1"></i>
+                    <i class="dropdown-icon fe fe-facebook ml-1 text-white"></i>
                   </a>
                   <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
-                    <i class="dropdown-icon fe fe-instagram ml-1"></i>
+                    <i class="dropdown-icon fe fe-instagram ml-1 text-white"></i>
                   </a>
                   <a href="https://twitter.com/CompaniaDigital" target="_blank">
-                    <i class="dropdown-icon fe fe-twitter ml-1"></i>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCd4Rh7AD4lnpr1AQ5XmOucg" target="_blank">
-                    <i class="dropdown-icon fe fe-video ml-1"></i>
+                    <i class="dropdown-icon fe fe-twitter ml-1 text-white"></i>
                   </a>
                 </div>
-                <!-- <a class="nav-link icon" href="about.html">
-                  Nosotros
-                </a> -->
-                <a class="nav-link icon" href="FAQs.html">
+                <a class="nav-link d-none d-md-flex text-white" href="FAQs.html">
                   Preguntas Frecuentes
                 </a>
+                <div class="nav-item d-none d-md-flex">
+                  <a href="./opportunities.html" class="btn btn-outline-secondary" target="_blank">Oportunidades</a>
+                </div>
 
-                <a href="contact.html" class="btn btn-primary text-dark">Contacto</a>
-            
               </div>
               <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
                 <span class="header-toggler-icon"></span>
@@ -80,357 +196,582 @@
             </div>
           </div>
         </div>
-        <div class="header collapse d-lg-flex p-0 sticky-top bg-dark" id="headerMenuCollapse">
+   
+        <section class="jumbotron mb-0 bg-cover" style="background-color: #f5f7fb; padding: 1.5rem 1rem;">
+          <div class="container">
+            <h1>Mejora tu vida con tecnología</h1>
+            <p class="lead"><b>Desarrolla tus habilidades digitales para impulsar tus proyectos</b> </p>
+          </div>
+        </section>
+  
+        <div class="header collapse d-lg-flex p-0 sticky-top" id="headerMenuCollapse" style="background-color: #343a40;">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-3 ml-auto">
-                <ul class="nav nav-tabs border-0 flex-column flex-lg-row float-right">
-                  <li class="nav-item">
-                    <a href="./tucuman.html" class="nav-link"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
-                  </li>
-                </ul>
+                <form class="input-icon my-3 my-lg-0">
+                  <input type="search" class="form-control header-search" placeholder="Buscar..." tabindex="1">
+                  <div class="input-icon-addon">
+                    <i class="fe fe-search"></i>
+                  </div>
+                </form>
               </div>
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link active"><i class="fe fe-home"></i> Inicio</a>
+                    <a href="./index.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a>
                   </li>
                   <li class="nav-item">
-                    <!-- <a href="./services.html" class="nav-link"><i class="fe fe-list"></i> Servicios</a> -->
-                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="fe fe-box"></i> Servicios</a>
-                    <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
-                      <a href="web.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Diseño Web</strong>
-                        </div>
-                      </a>
-                      <a href="diseño.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Diseño Gráfico</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="marketing.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Marketing Digital</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="gestion.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-dark"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Gestion de proyectos</strong>
-                            <!-- <div class="small text-muted">De todo tipo</div> -->
-                          </div>
-                      </a>
-                      <a href="contenido.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Generación de contenido</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="asesoria.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Asesoría para tu negocio o empresa</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                      <a href="secondary.html" class="dropdown-item d-flex p-1">
-                        <div class="col-1">
-                          <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
-                        </div>
-                        <div class="col-11">
-                          <strong>Servicios secundarios</strong>
-                          <!-- <div class="small text-muted">De todo tipo</div> -->
-                        </div>
-                      </a>
-                    </div>
+                    <a href="./tips.html" class="nav-link"><i class="fas fa-comments"></i> Tips & Consejos</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link"><i class="fe fe-list"></i> Promociones</a>
+                    <a href="./docs/index.html" class="nav-link active"><i class="fe fe-file-text"></i> Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./opportunities.html" class="nav-link"><i class="fe fe-briefcase"></i> Oportunidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./blog.html" class="nav-link"><i class="fe fe-book"></i> Blog</a>
+                    <a href="./category_1.html" class="nav-link"><i class="fas fa-laptop-house"></i> Trabajo a distancia</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="my-3 my-md-5">
+          
+
           <div class="container">
-            <div class="">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="card-header">
-                      <h4>Publicaciones destacadas</h4>
-                    </div>
-                    <br>
-                    <div class="card card-aside">
-                      <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/andrew-neel-141710-500.jpg)"></a>
-                      <div class="card-body d-flex flex-column">
-                        <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
-                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
-                        <div class="d-flex align-items-center pt-5 mt-auto">
-                          <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/11.jpg)"></div>
-                          <div>
-                            <a href="./profile.html" class="text-default">Coke Colombres</a>
-                            <small class="d-block text-muted">Hace 3 días</small>
-                          </div>
-                          <div class="ml-auto text-muted">
-                            <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                            <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-share-2 mr-1"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="page-header">
+              <h1 class="page-title">
+                Blog
+              </h1>
+            </div>
+            <div class="row row-deck row-cards">
+              <div class="col-lg-3 order-lg-1 mb-4">
+                <a href="" class="btn btn-block btn-gray mb-4">
+                  <i class="fas fa-sort-amount-down-alt mr-2"></i> Nuestras categorías
+                </a>
 
-                    <div class="card card-aside">
-                      <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
-                      <div class="card-body d-flex flex-column">
-                        <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
-                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
-                        <div class="d-flex align-items-center pt-5 mt-auto">
-                          <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/18.jpg)"></div>
-                          <div>
-                            <a href="./profile.html" class="text-default">Tomas Guerineau</a>
-                            <small class="d-block text-muted">Hace 1 semana</small>
-                          </div>
-                          <div class="ml-auto text-muted">
-                            <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                            <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-share-2 mr-1"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="list-group list-group-transparent mb-0">
+                  <a href="../docs/index.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-thumbs-up"></i></span>Introducción</a>
+                </div>
 
+                <div class="list-group list-group-transparent mb-0">
+                  <a href="../docs/alerts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-toolbox"></i></span>Herramientas digitales</a>
+                  <a href="../docs/buttons.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-chart-bar"></i></span>Gestión de proyectos</a>
+                  <a href="../docs/colors.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-poll"></i></span>Marketing Digital</a>
+                  <a href="../docs/cards.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-desktop"></i></span>Diseño Web</a>
+                  <a href="../docs/typography.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-seedling"></i></span>Desarrollo profesional</a>
+                </div>
+                <div class="d-none d-lg-block mt-6">
+                  <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">Hacer sugerencias</a>
+                </div>
+                <hr>
+                <a href="" class="btn btn-block btn-gray mb-4">
+                  <i class="fas fa-info mr-2"></i> Lo más visto
+                </a>
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Aumenta tu productividad con Trello</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros dispositivos para colab..</small>
                   </div>
-                  <div class="col-md-3">
-                    <div class="card-header">
-                      <h4>Ultimas publicaciones</h4>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-red mr-3">
-                          <i class="fe fe-users"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Consejos para mantenerte actualizado</small></a></h4>
-                          <small class="text-muted">Coke Colombres</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-blue mr-3">
-                          <i class="fe fe-star"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Algunas herramientas para mejorar el trabajo en equipo</small></a></h4>
-                          <small class="text-muted">Tomas Guerineau</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-green mr-3">
-                          <i class="fe fe-phone"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Algunas herramientas para mejorar el trabajo en equipo</small></a></h4>
-                          <small class="text-muted">Tomas Guerineau</small>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br>
-                    <form class="input-icon my-3 my-lg-0">
-                      <input type="search" class="form-control header-search" placeholder="Search…" tabindex="1">
-                      <div class="input-icon-addon">
-                        <i class="fe fe-search"></i>
-                      </div>
-                    </form>
-                    <br>
-                    <form>
-                      <div class="form-group">
-                        <div class="selectgroup selectgroup-pills">
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
-                            <span class="selectgroup-button">HTML</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="CSS" class="selectgroup-input">
-                            <span class="selectgroup-button">CSS</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="PHP" class="selectgroup-input">
-                            <span class="selectgroup-button">PHP</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
-                            <span class="selectgroup-button">JavaScript</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-                            <span class="selectgroup-button">Ruby</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-                            <span class="selectgroup-button">Ruby</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="C++" class="selectgroup-input">
-                            <span class="selectgroup-button">C++</span>
-                          </label>
-                        </div>
-                        <div class="btn-list text-center">
-                          <a href="#" class="btn btn-pill btn-primary text-dark">Filtrar</a>
-                        </div>
-                      </div>
-                    </form>
                   </div>
+                </div>                
+                              
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Tips para estrategas de redes sociales</small></a></h4>
+                    <small class="text-muted">La Gaceta - Tucumán</small>
+                  </div>
+                  </div>
+                </div> 
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-lg-9">
+                <div class="p-2">
+                  <div class="row row-cards row-deck">
+              <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you."></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Well, I didn't vote for you.</a></h4>
+                    <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Peter Richards</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">How do you know she is a witch?</a></h4>
+                    <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/26.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Wayne Holland</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4">
+                <div class="card">
+                  <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Shut up!</a></h4>
+                    <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/7.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Michelle Ross</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
+                    <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/4.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Bobby Knight</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">You don't like your job, you don't strike.</a></h4>
+                    <div class="text-muted">But, Aquaman, you cannot marry a woman without gills. You're from two different worlds… Oh, I've ...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/35.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Craig Anderson</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">I hope I didn't brain my damage.</a></h4>
+                    <div class="text-muted">I don't like being outdoors, Smithers. For one thing, there's too many fat children. Oh, loneline...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/29.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Crystal Wallace</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="card card-aside">
+                  <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                    <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                    <div class="d-flex align-items-center pt-5 mt-auto">
+                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/18.jpg)"></div>
+                      <div>
+                        <a href="./profile.html" class="text-default">Rose Bradley</a>
+                        <small class="d-block text-muted">3 days ago</small>
+                      </div>
+                      <div class="ml-auto text-muted">
+                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+
+        <!-- Large modal -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title h4" id="myLargeModalLabel">Presentación - la compañía digital</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZOoVOfieAF8" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="">
+          <div class="bg-white">
+            <div class="container py-5">
+              <div class="">
+                <div class="card-header">
+                  <h3 class="section-heading text-uppercase">Últimas publicaciones</h3>
+                  <div class="card-options">
+                    <small class="ml-2">Seguinos en:</small>
+                    <div class="nav-item">
+                      <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
+                      </a>
+                      <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                      </a>
+                      <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                      </a>
+                      <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                        <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row row-deck row-cards">
+                    <!-- Set up your HTML -->
+                    <div class="owl-carousel">
+
+                      <div class="item hvr-float-shadow">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <h4><a href="#">Shut up!</a></h4>
+                            <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item hvr-float-shadow">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <h4><a href="#">How do you know she is a witch?</a></h4>
+                            <div class="text-muted">Are you suggesting that coconuts migrate? But she's got a wart. You ...</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item hvr-float-shadow">
+                        <div class="card">
+                          <div class="card-body d-flex flex-column">
+                            <h4><a href="#">Well, I didn't vote for you.</a></h4>
+                            <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! , English pig-dog...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container">
+            <br>
+            <div class="card-header">
+              <h3 class="section-heading text-uppercase">Nuestras categorías</h3>
+              <div class="card-options">
+                <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">¿ Alguna sugerencia ?</a>
+              </div>
+            </div>
+            <br>
+
+            <div class="row row-cards row-deck">
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media mb-5">
+                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat1.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
+                      <div class="media-body">
+                        <h5>Trabajo a distancia</h5>
+                        <address class="text-muted small">
+                          Herramientas, tips y consejos
+                        </address>
+                      </div>
+                    </div>
+                    <div class="h6">Description</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media mb-5">
+                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat2.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
+                      <div class="media-body">
+                        <h5>Herramientas digitales</h5>
+                        <address class="text-muted small">
+                          Recomendadas
+                        </address>
+                      </div>
+                    </div>
+                    <div class="h6">Description</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media mb-5">
+                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat3.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
+                      <div class="media-body">
+                        <h5>Entorno de trabajo</h5>
+                        <address class="text-muted small">
+                          Aumenta tu productividad
+                        </address>
+                      </div>
+                    </div>
+                    <div class="h6">Description</div>
+                    <p>Organización integral. Para tu espacio de trabajo tanto físico como digital.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="media mb-5">
+                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat4.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
+                      <div class="media-body">
+                        <h5>Lifestyle</h5>
+                        <address class="text-muted small">
+                          Organización personal
+                        </address>
+                      </div>
+                    </div>
+                    <div class="h6">Description</div>
+                    <p>Recomendaciones para llevar un estilo de vida saludablemente organizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <div class="card-header">
+              <h3 class="section-heading text-uppercase">¿ Qué temas te interesan ?</h3>
+              <div class="card-options">
+                <span href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">Selecciona algunos tags</span>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="card-body">
+                
+                <div class="row text-center">
+                  <div class="col">
+                    <div class="selectgroup selectgroup-pills">
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
+                        <span class="selectgroup-button">Emprendimiento</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="CSS" class="selectgroup-input">
+                        <span class="selectgroup-button">Marketing</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="PHP" class="selectgroup-input">
+                        <span class="selectgroup-button">Tecnología</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+                        <span class="selectgroup-button">Herramientas</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Diseño Web</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Liderazgo</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+                        <span class="selectgroup-button">Herramientas</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Diseño Web</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Liderazgo</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+                        <span class="selectgroup-button">Herramientas</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Diseño Web</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Liderazgo</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+                        <span class="selectgroup-button">Herramientas</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Diseño Web</span>
+                      </label>
+                      <label class="selectgroup-item">
+                        <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+                        <span class="selectgroup-button">Liderazgo</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-outline-secondary">Aplicar y buscar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
       </div>
-      <div class="footer bg-three">
+      <div class="footer bg-three noselect">
         <div class="container">
           <div class="row">
 
             <div class="col-md-4">
               <a class="header-brand" href="./index.html">
-                La Compañía Digital
+                <img src="assets/images/logo/logo-06.png" class="" style="max-width: 220px" alt="La compañía digital">
               </a>
-              <p class="mt-2">Somos consultores especialistas en crear soluciones digitales</p>
-              <hr class="mb-3 mt-4">
-              <h4>Redes sociales</h4>
-              <ul class="social-links list-inline mt-2">
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="1234567890"><i class="fa fa-phone text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="@skypename"><i class="fa fa-skype text-secondary"></i></a>
-                </li>
-              </ul>
+              <br>
+              <p class="pt-3">Noticias, consejos, opiniones, recomendaciones y más. <br> Todo sobre el mundo digital y la tecnología.</p>
             </div>
-
-            <div class="col-md-4">
-              <h4>Algunos de nuestros servicios</h4>
+            <div class="col-md-4 align-items-right">
+              <h4 class="p-3">Seguinos:</h4>
               <ul class="list-unstyled leading-loose">
-
-                
                 <li>
                   <a href="web.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
+                      <i class="fa fa-whatsapp text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Diseño Web</strong>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="diseño.html" class="d-flex">
-                    <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
-                    </div>
-                    <div class="col-11">
-                      <strong>Diseño Gráfico</strong>
+                      <strong>Whatsapp</strong>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="marketing.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                      <i class="fa fa-instagram text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Marketing Digital</strong>
+                      <strong>@lacompania.digital</strong>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="gestion.html" class="d-flex">
                       <div class="col-1">
-                        <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-red"></i></span>
+                        <i class="fa fa-twitter text-secondary"></i>
                       </div>
                       <div class="col-11">
-                        <strong>Gestion de proyectos</strong>
+                        <strong>Twitter</strong>
                       </div>
                   </a>
                 </li>
                 <li>
                   <a href="contenido.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
+                      <i class="fa fa-facebook text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Generación de contenido</strong>
+                      <strong>Facebook</strong>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="asesoria.html" class="d-flex">
+                  <a href="diseño.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
+                      <i class="fa fa-at text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Asesoría para tu negocio o empresa</strong>
+                      <strong>contacto@lacompaniadigital.com</strong>
                     </div>
                   </a>
                 </li>
               </ul>
             </div>
-
             <div class="col-md-4">
-              <h4>Nuestro equipo</h4>
-              <div class="text-muted">
-                <a href="equipo.html">
-                  <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+              <h4 class="white-text pt-3">Registrate a nuestro canal</h4>
+              <p class="grey-text text-lighten-4">Tenemos un canal de novedades a donde compartimos nuestras ultimas publicaciones</p>
+              <p>
+                 Hablamos sobre nuevas tecnologias y sus características, problemas generales o preguntas, o cualquier otra cosa relacionada al mundo digital.
+              </p>
+              <div class="nav-item">
+                <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
                 </a>
-                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/12.jpg)"></div>
-                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/10.jpg)"></div>
-              </div>
-              <h4 class="mt-6">Nuestro portfolio</h4>
-              <div class="text-muted">
-                <span class="stamp stamp-md bg-blue mr-3">
-                  Clic
-                </span>
-                <span class="stamp stamp-md bg-green mr-3">
-                  dataLab
-                </span>
-                <span class="stamp stamp-md bg-orange mr-3">
-                  ditrabajo
-                </span>
+                <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                </a>
+                <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                </a>
+                <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -440,12 +781,12 @@
         <div class="container">
           <div class="row align-items-center flex-row-reverse">
             <div class="col-auto ml-lg-auto">
-              <span class="mr-2">Copyright © 2019</span><a href="index.html" class="mr-2 anav">La compañía digital</a> 
-              <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm text-white"><i class="flag flag-gb" style="height: 12px"></i> EN</a>
-              <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary btn-sm"><i class="flag flag-ar" style="height: 12px"></i> ES</a>
+              <span class="mr-2">Copyright © 2020 - <b>LA COMPAÑÍA DIGITAL</b></span> 
+              <!-- <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm text-white"><i class="flag flag-gb" style="height: 12px"></i> EN</a>
+              <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary btn-sm"><i class="flag flag-ar" style="height: 12px"></i> ES</a> -->
             </div>
             <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-              <div class="row align-items-center">
+              <div class="row align-items-center text-white">
                 <div class="col-auto">
                   <ul class="list-inline list-inline-dots mb-0">
                     <li class="list-inline-item"><a href="FAQs.html" class="anav">Preguntas Frecuentes</a></li>
@@ -480,14 +821,56 @@
           $('.stop').on('click',function(){
               owl.trigger('stop.owl.autoplay')
           })
-        </script>
 
-        <script type="text/javascript">
-          $('#btn-proximamente').click(function() {
-              swal("Hello world!");
-            })
+          $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+            if (!$(this).next().hasClass('show')) {
+              $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+          
+          
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+              $('.dropdown-submenu .show').removeClass("show");
+            });
+          
+          
+            return false;
+          });
         </script>
       </footer>
     </div>
+
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Sección en desarrollo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Si quieres ayudarme puedes aportar <b>comentarios o sugerencias</b>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar comentarios</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
