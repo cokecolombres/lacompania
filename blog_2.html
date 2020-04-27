@@ -12,10 +12,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo/favicon.png" />
+    <link rel="icon" href="./assets/images/logo/lacompania.png" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo/lacompania.png" />
     <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>La compañía digital - Servicios tecnológicos de todo tipo</title>
+    <title>LA COMPAÑÍA DIGITAL - Impulsamos tu vida con tencnología</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <script src="./assets/js/require.min.js"></script>
@@ -27,6 +27,21 @@
     <!-- Dashboard Core -->
     <link href="./assets/css/dashboard.css" rel="stylesheet" />
     <script src="./assets/js/dashboard.js"></script>
+    <!-- Animaciones hover -->
+    <link href="./assets/css/hover-min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+
+
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.css">
+
     <!-- c3.js Charts Plugin -->
     <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
     <script src="./assets/plugins/charts-c3/plugin.js"></script>
@@ -35,41 +50,145 @@
     <script src="./assets/plugins/maps-google/plugin.js"></script>
     <!-- Input Mask Plugin -->
     <script src="./assets/plugins/input-mask/plugin.js"></script>
+    <script src="https://kit.fontawesome.com/cfdfa8e51e.js" crossorigin="anonymous"></script>
   </head>
+  <style type="text/css">
+    .floatingBtn {
+      position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 1000;
+    }
+
+    #wspBtn {
+      width: 56px;
+        min-width: 56px;
+        height: 56px;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .masthead {
+      height: 90vh;
+      min-height: 500px;
+      /*background-image: url('assets/images/technology.jpg');*/
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+    }
+
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+
+
+    .bottombar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #363F51;
+      border-top: 1px solid rgba(0, 40, 100, 0.12);
+      z-index: 100;
+      font-size: 1rem;
+      padding: .75rem 0;
+      color: #fff;
+      box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.05);
+    }
+
+    .bottombar-close {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      color: #9aa0ac;
+      transition: .3s color;
+      display: block;
+      margin-left: 1rem;
+    }
+
+    .bottombar-close:hover {
+      color: #6e7687;
+    }
+
+    .bottombar-image {
+      position: relative;
+      display: block;
+      margin: 0 1rem 0 0;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image {
+        margin: -176px 1rem -90px -25px;
+      }
+    }
+
+    .bottombar-image img {
+      width: 109px;
+      display: block;
+    }
+
+    @media (min-width: 992px) {
+      .bottombar-image img {
+        width: 218px;
+      }
+    }
+    
+    .bg-cover {
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      z-index: -2;
+    }
+
+    .bg-cover {
+        background-image: url('');
+    }
+  </style>
   <body class="">
     <div class="page">
       <div class="page-main">
-        <div class="header py-4 bg-white">
+        <div class="header py-4 bg-three">
           <div class="container">
             <div class="d-flex">
-              <a href="./index.html">
-                <img src="assets/images/logo/logo11.png" class="header-brand-img" alt="La compañía digital">
+              <a class="header-brand" href="./index.html">
+                <img src="assets/images/logo/logo-06.png" class="header-brand-img" alt="LA COMPAÑÍA DIGITAL">
               </a>
-
-              <!-- La compañía <span class="text-primary">digital</span> -->
-
               <div class="d-flex order-lg-2 ml-auto">
                 <div class="nav-item d-none d-md-flex">
                   <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
-                    <i class="dropdown-icon fe fe-linkedin ml-1"></i>
+                    <i class="dropdown-icon fe fe-linkedin ml-1 text-white"></i>
                   </a>
                   <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
-                    <i class="dropdown-icon fe fe-facebook ml-1"></i>
+                    <i class="dropdown-icon fe fe-facebook ml-1 text-white"></i>
                   </a>
                   <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
-                    <i class="dropdown-icon fe fe-instagram ml-1"></i>
+                    <i class="dropdown-icon fe fe-instagram ml-1 text-white"></i>
                   </a>
                   <a href="https://twitter.com/CompaniaDigital" target="_blank">
-                    <i class="dropdown-icon fe fe-twitter ml-1"></i>
+                    <i class="dropdown-icon fe fe-twitter ml-1 text-white"></i>
                   </a>
-                  <!-- <a href="https://www.youtube.com/channel/UCd4Rh7AD4lnpr1AQ5XmOucg" target="_blank">
-                    <img src="assets/images/icons/youtube_icon.png" width="20">
-                  </a> -->
                 </div>
-                <a class="nav-link icon d-none d-md-flex" href="FAQs.html">
+                <a class="nav-link d-none d-md-flex text-white" href="FAQs.html">
                   Preguntas Frecuentes
                 </a>
-                <a href="contact.html" class="btn btn-outline-secondary d-none d-md-flex hvr-float-shadow">Contacto</a>
+                <div class="nav-item d-none d-md-flex">
+                  <a href="./opportunities.html" class="btn btn-outline-secondary" target="_blank">Oportunidades</a>
+                </div>
+
               </div>
               <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
                 <span class="header-toggler-icon"></span>
@@ -77,452 +196,261 @@
             </div>
           </div>
         </div>
-        <div class="header collapse d-lg-flex p-0 sticky-top bg-three" id="headerMenuCollapse">
+   
+        <section class="jumbotron mb-0 bg-cover" style="background-color: #f5f7fb; padding: 1.5rem 1rem;">
+          <div class="container">
+            <h1>Mejora tu vida con tecnología</h1>
+            <p class="lead"><b>Desarrolla tus habilidades digitales para impulsar tus proyectos</b> </p>
+          </div>
+        </section>
+  
+        <div class="header collapse d-lg-flex p-0 sticky-top" id="headerMenuCollapse" style="background-color: #343a40;">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-3 ml-auto">
-                <ul class="nav nav-tabs border-0 flex-column flex-lg-row float-right">
-                  <!-- <li class="nav-item">
-                    <a href="http://tucuman.digital" target="_blank" class="nav-link anav"><i class="fe fe-map-pin"></i> Tucumán - Argentina</a>
-                  </li> -->
-                  <!-- <li class="nav-item d-none d-lg-flex">
-                    <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-info"></i> Noticias</a>
-                  </li>
-                  <li class="nav-item d-none d-lg-flex">
-                    <a id="btn-proximamente" class="nav-link anav text-white"><i class="fe fe-book"></i> Blog</a>
-                  </li> -->
-                  <li class="nav-item">
-                    <a href="./opportunities.html" class="nav-link anav text-white"><i class="fe fe-briefcase"></i> Oportunidades</a>
-                  </li>
-                </ul>
+                <form class="input-icon my-3 my-lg-0">
+                  <input type="search" class="form-control header-search" placeholder="Buscar..." tabindex="1">
+                  <div class="input-icon-addon">
+                    <i class="fe fe-search"></i>
+                  </div>
+                </form>
               </div>
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
-                  <!-- <li class="nav-item">
-                    <a href="./index.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link anav text-white" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fe fe-box"></i>
-                      Servicios
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarDropdownMenuLink">
-                      <li>
-                        <a href="web.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Desarrollo & Diseño Web</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="diseño.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Diseño Gráfico</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="marketing.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Marketing Digital</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="contenido.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Generación de contenidos digitales</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <div class="dropdown-divider"></div>
-                      <li>
-                        <a href="asesoria.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Asesoría</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="gestion.html" class="dropdown-item d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-dark"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Gestion de proyectos</strong>
-                          </div>
-                        </a>
-                      </li>
-                      <div class="dropdown-divider"></div>
-                      <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-item dropdown-toggle d-flex p-1">
-                          <div class="col-1">
-                            <span class="mr-1 align-self-center"><i class="fa fa-check-square-o text-orange mr-1"></i></span>
-                          </div>
-                          <div class="col-11">
-                            <strong>Servicios secundarios</strong>
-                          </div>
-                        </a>
-                        <ul class="dropdown-menu p-1">
-                          <li><a class="dropdown-item" href="app.html">App's Mobile</a></li>
-                          <li><a class="dropdown-item" href="google.html">Google My Business</a></li>
-                          <li><a class="dropdown-item" href="airbnb.html">Airbnb y Booking</a></li>
-                          <li><a class="dropdown-item" href="spotify.html">Spotify</a></li>
-                          <li><a class="dropdown-item" href="digitalizacion.html">Digitalización de Procesos</a></li>
-                          <li><a class="dropdown-item" href="email.html">E-mail Corporativo</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Promociones</a>
-                  </li> -->
-
-                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link anav text-white"><i class="fe fe-home"></i> Inicio</a>
+                    <a href="./tips.html" class="nav-link disabled"><i class="fas fa-comments"></i> Tips & Consejos</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-calendar"></i> Novedades</a>
+                    <a href="./docs/index.html" class="nav-link active"><i class="fe fe-file-text"></i> Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-folder-plus"></i> Herramientas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-share-2"></i> Cursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./promotions.html" class="nav-link anav text-white"><i class="fe fe-list"></i> Blog</a>
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown" aria-expanded="true"><i class="fas fa-laptop-house"></i> Trabajo a distancia</a>
+                    <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
+                      <a href="./cards.html" class="dropdown-item ">Cards design</a>
+                      <a href="./charts.html" class="dropdown-item ">Charts</a>
+                      <a href="./pricing-cards.html" class="dropdown-item ">Pricing cards</a>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <style type="text/css">
-          header.masthead {
-              margin-bottom: 50px;
-              background: no-repeat center center;
-              background-attachment: scroll;
-              position: relative;
-              background-size: cover;
-          }
-          header.masthead .overlay {
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: 100%;
-              width: 100%;
-              opacity: .5;
-          }
-        </style>
-        <div class="container">
-          <div class="page-header">
-              <h1 class="page-title">
-                 𝕃𝕒 𝕔𝕠𝕞𝕡𝕒ñí𝕒 𝕕𝕚𝕘𝕚𝕥𝕒𝕝 para 𝘀𝗲𝗴𝘂𝗶𝗿 𝗮𝗱𝗲𝗹𝗮𝗻𝘁𝗲 con tus proyectos
-              </h1>
+          
+
+          <div class="container">
+            <div class="card-header mt-2">
+              <h3 class="section-heading text-uppercase">Blog</h3>
+              <div class="card-options">
+                <small class="ml-2">Seguinos en:</small>
+                <div class="nav-item">
+                  <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
+                  </a>
+                  <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                  </a>
+                  <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="container d-block d-md-flex">
-          <div class="card col-12 col-md-9">
-            <header class="masthead mt-6">
-              <div class="overlay"></div>
-              <div class="">
-                <div class="row">
-                  <div class="col-11 mx-auto">
-                    <div class="text-dark">
-                      <h1>Trello, una herramienta fundamental para la gestion de proyectos</h1>
-                      <span class="meta">Publicado por
-                        <a href="#">Coke Colombres</a>
-                        el 22/12/2019</span>
-                    </div>
-                    <img src="assets/images/asesoria1.jpg" class="img-blog mt-5">
+            <div class="row row-deck row-cards">
+             <div class="col-lg-3 order-lg-1 my-2">
+                <a href="" class="btn btn-block btn-gray">
+                  <i class="fas fa-info mr-2"></i> Lo más leído
+                </a>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">1. Aumenta tu productividad con Trello</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros dispositivos para colab..</small>
+                  </div>
+                  </div>
+                </div>                
+                              
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">2. Tips para estrategas de redes sociales</small></a></h4>
+                    <small class="text-muted">La Gaceta - Tucumán</small>
+                  </div>
+                  </div>
+                </div> 
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">3. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">4. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">5. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+                <br>
+                <div style="max-height: 450px; overflow-y: scroll;">
+                  <a class="twitter-timeline" href="https://twitter.com/CompaniaDigital?ref_src=twsrc%5Etfw">Tweets by CompaniaDigital</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row row-deck row-cards">
+                  <div class="card">
+                    <header class="mt-6">
+                      <div class="overlay"></div>
+                      <div class="">
+                        <div class="row">
+                          <div class="col-11 mx-auto">
+                            <div class="text-dark">
+                              <h1>Trello, una herramienta fundamental para la gestion de proyectos. Gran herramienta para impulsar a tu equipo durante este aislamiento</h1>
+                              <p class="h4 text-muted">El presidente argentino coincidió con su par chileno en establecer una agenda común para atender la pandemia de COVID-19. La charla se dio luego de la queja de la Cancillería de Chile por el apoyo de Fernández a la oposición trasandina</p>
+                            </div>
+                            <img src="assets/images/marketing.jpg" class="img-blog mt-5">
+                          </div>
+                        </div>
+                      </div>
+                    </header>
+                    <hr>
+                    <article>
+                      <div class="pb-6">
+                        <div class="row">
+                          <div class="card-body mx-auto">
+                            <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+
+                            <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+
+                            <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+
+                            <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+
+                            <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+
+                            <h2 class="section-heading pt-2">The Final Frontier</h2>
+
+                            <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+
+                            <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
                   </div>
                 </div>
               </div>
-            </header>
-            <article>
-              <div class="pb-6">
-                <div class="row">
-                  <div class="card-body mx-auto">
-                    <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+            </div>
 
-                    <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-
-                    <h2 class="section-heading pt-2">The Final Frontier</h2>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-                    <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                  </div>
-                </div>
-              </div>
-            </article>
           </div>
-          <div class="col-10 offset-1 offset-md-0 col-md-3 order-lg-1 mb-4">
-                  <div class="card-header">
-                    <h3 class="card-title text-info">#TrabajemosADistancia</h3>
-                  </div>
-                  <div class="list-group list-group-transparent mb-0">
-                    <a href="../docs/index.html" class="list-group-item list-group-item-action">Introduction</a>
-                    <a href="../docs/alerts.html" class="list-group-item list-group-item-action">Principios básicos</a>
-                    <a href="../docs/colors.html" class="list-group-item list-group-item-action">Entorno de trabajo</a>
-                    <a href="../docs/avatars.html" class="list-group-item list-group-item-action">Herramientas necesarias</a>
-                    
-                    <!-- <a href="../docs/charts.html" class="list-group-item list-group-item-action">Aplicaciones y usos</a>
-                    <a href="../docs/form-components.html" class="list-group-item list-group-item-action">10 consejos para videollamadas</a>
-                    <a href="../docs/tags.html" class="list-group-item list-group-item-action">Líderar a distancia</a> -->
-                  </div>
+          </div>
 
-                 <br><br>
-
-                  <div class="card-header">
-                    <h3 class="card-title text-info">#SomosResponsables</h3>
-                  </div>
-                  <div class="list-group list-group-transparent mb-0">
-                    <a href="../docs/buttons.html" class="list-group-item list-group-item-action">Comunicación organizada</a>
-                    
-                  </div>
-
-                  <br><br>
-
-                  <div class="card-header">
-                    <h3 class="card-title text-info">#MeQuedoEnCasa</h3>
-                  </div>
-                  <div class="list-group list-group-transparent mb-0">
-                    <a href="../docs/buttons.html" class="list-group-item list-group-item-action">Comunicación organizada</a>
-                    
-                  </div>
-                  
-                  <!-- <div class="d-none d-lg-block mt-3">
-                    <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/form-components.md" class="text-muted">Hacer sugerencias</a>
-                  </div> -->
-                  <div class="mt-7">
-                    <div class="card-header">
-                      <h4>Ultimas publicaciones</h4>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-red mr-3">
-                          <i class="fe fe-users"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Consejos para mantenerte actualizado</small></a></h4>
-                          <small class="text-muted">Coke Colombres</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-blue mr-3">
-                          <i class="fe fe-star"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Algunas herramientas para mejorar el trabajo en equipo</small></a></h4>
-                          <small class="text-muted">Tomas Guerineau</small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="m-1 p-1">
-                      <div class="d-flex align-items-center">
-                        <span class="stamp stamp-md bg-green mr-3">
-                          <i class="fe fe-phone"></i>
-                        </span>
-                        <div>
-                          <h4 class="m-0"><a href="javascript:void(0)"><small>Algunas herramientas para mejorar el trabajo en equipo</small></a></h4>
-                          <small class="text-muted">Tomas Guerineau</small>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br>
-                    <form class="input-icon col-12">
-                      <input type="search" class="form-control header-search" placeholder="Search…" tabindex="1">
-                      <div class="input-icon-addon">
-                        <i class="fe fe-search"></i>
-                      </div>
-                    </form>
-                    <br>
-                    <form>
-                      <div class="form-group">
-                        <div class="selectgroup selectgroup-pills">
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
-                            <span class="selectgroup-button">HTML</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="CSS" class="selectgroup-input">
-                            <span class="selectgroup-button">CSS</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="PHP" class="selectgroup-input">
-                            <span class="selectgroup-button">PHP</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
-                            <span class="selectgroup-button">JavaScript</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-                            <span class="selectgroup-button">Ruby</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
-                            <span class="selectgroup-button">Ruby</span>
-                          </label>
-                          <label class="selectgroup-item">
-                            <input type="checkbox" name="value" value="C++" class="selectgroup-input">
-                            <span class="selectgroup-button">C++</span>
-                          </label>
-                        </div>
-                        <div class="btn-list text-center">
-                          <a href="#" class="btn btn-pill btn-outline-primary text-dark">Filtrar</a>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-              </div>
-        </div>
-      </div>
-      <div class="footer bg-three">
+      <div class="footer bg-three noselect">
         <div class="container">
           <div class="row">
 
             <div class="col-md-4">
               <a class="header-brand" href="./index.html">
-                La Compañía Digital
+                <img src="assets/images/logo/logo-06.png" class="" style="max-width: 220px" alt="La compañía digital">
               </a>
-              <p class="mt-2">Somos consultores especialistas en crear soluciones digitales</p>
-              <hr class="mb-3 mt-4">
-              <h4>Redes sociales</h4>
-              <ul class="social-links list-inline mt-2">
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="1234567890"><i class="fa fa-phone text-secondary"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="javascript:void(0)" title="" data-toggle="tooltip" data-original-title="@skypename"><i class="fa fa-skype text-secondary"></i></a>
-                </li>
-              </ul>
+              <br>
+              <p class="pt-3">Noticias, consejos, opiniones, recomendaciones y más. <br> Todo sobre el mundo digital y la tecnología.</p>
             </div>
-
-            <div class="col-md-4">
-              <h4>Algunos de nuestros servicios</h4>
+            <div class="col-md-4 align-items-right">
+              <h4 class="p-3">Seguinos:</h4>
               <ul class="list-unstyled leading-loose">
-
-                
                 <li>
                   <a href="web.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-code text-info"></i></span>
+                      <i class="fa fa-whatsapp text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Diseño Web</strong>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="diseño.html" class="d-flex">
-                    <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-paint-brush text-danger mr-1"></i></span>
-                    </div>
-                    <div class="col-11">
-                      <strong>Diseño Gráfico</strong>
+                      <strong>Whatsapp</strong>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="marketing.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fe fe-search text-blue mr-1"></i></span>
+                      <i class="fa fa-instagram text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Marketing Digital</strong>
+                      <strong>@lacompania.digital</strong>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="gestion.html" class="d-flex">
                       <div class="col-1">
-                        <span class="mr-1 align-self-center"><i class="fa fa-list-ol mr-1 text-red"></i></span>
+                        <i class="fa fa-twitter text-secondary"></i>
                       </div>
                       <div class="col-11">
-                        <strong>Gestion de proyectos</strong>
+                        <strong>Twitter</strong>
                       </div>
                   </a>
                 </li>
                 <li>
                   <a href="contenido.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-file-movie-o text-yellow mr-1"></i></span>
+                      <i class="fa fa-facebook text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Generación de contenido</strong>
+                      <strong>Facebook</strong>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="asesoria.html" class="d-flex">
+                  <a href="diseño.html" class="d-flex">
                     <div class="col-1">
-                      <span class="mr-1 align-self-center"><i class="fa fa-handshake-o mr-1 text-secondary"></i></span>
+                      <i class="fa fa-at text-secondary"></i>
                     </div>
                     <div class="col-11">
-                      <strong>Asesoría para tu negocio o empresa</strong>
+                      <strong>contacto@lacompaniadigital.com</strong>
                     </div>
                   </a>
                 </li>
               </ul>
             </div>
-
             <div class="col-md-4">
-              <h4>Nuestro equipo</h4>
-              <div class="text-muted">
-                <a href="equipo.html">
-                  <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/16.jpg)"></div>
+              <h4 class="white-text pt-3">Registrate a nuestro canal</h4>
+              <p class="grey-text text-lighten-4">Tenemos un canal de novedades a donde compartimos nuestras ultimas publicaciones</p>
+              <p>
+                 Hablamos sobre nuevas tecnologias y sus características, problemas generales o preguntas, o cualquier otra cosa relacionada al mundo digital.
+              </p>
+              <div class="nav-item">
+                <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
                 </a>
-                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/12.jpg)"></div>
-                <div class="avatar avatar-md mr-2" style="background-image: url(./demo/faces/male/10.jpg)"></div>
-              </div>
-              <h4 class="mt-6">Nuestro portfolio</h4>
-              <div class="text-muted">
-                <span class="stamp stamp-md bg-blue mr-3">
-                  Clic
-                </span>
-                <span class="stamp stamp-md bg-green mr-3">
-                  dataLab
-                </span>
-                <span class="stamp stamp-md bg-orange mr-3">
-                  ditrabajo
-                </span>
+                <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                </a>
+                <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                </a>
+                <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                  <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -532,12 +460,12 @@
         <div class="container">
           <div class="row align-items-center flex-row-reverse">
             <div class="col-auto ml-lg-auto">
-              <span class="mr-2">Copyright © 2019</span><a href="index.html" class="mr-2 anav">La compañía digital</a> 
-              <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm text-white"><i class="flag flag-gb" style="height: 12px"></i> EN</a>
-              <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary btn-sm"><i class="flag flag-ar" style="height: 12px"></i> ES</a>
+              <span class="mr-2">Copyright © 2020 - <b>LA COMPAÑÍA DIGITAL</b></span> 
+              <!-- <a href="https://github.com/tabler/tabler" class="btn btn-outline-primary btn-sm text-white"><i class="flag flag-gb" style="height: 12px"></i> EN</a>
+              <a href="https://github.com/tabler/tabler" class="btn btn-outline-secondary btn-sm"><i class="flag flag-ar" style="height: 12px"></i> ES</a> -->
             </div>
             <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-              <div class="row align-items-center">
+              <div class="row align-items-center text-white">
                 <div class="col-auto">
                   <ul class="list-inline list-inline-dots mb-0">
                     <li class="list-inline-item"><a href="FAQs.html" class="anav">Preguntas Frecuentes</a></li>
@@ -572,14 +500,56 @@
           $('.stop').on('click',function(){
               owl.trigger('stop.owl.autoplay')
           })
-        </script>
 
-        <script type="text/javascript">
-          $('#btn-proximamente').click(function() {
-              swal("Hello world!");
-            })
+          $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+            if (!$(this).next().hasClass('show')) {
+              $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
+          
+          
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+              $('.dropdown-submenu .show').removeClass("show");
+            });
+          
+          
+            return false;
+          });
         </script>
       </footer>
     </div>
+
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Sección en desarrollo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Si quieres ayudarme puedes aportar <b>comentarios o sugerencias</b>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar comentarios</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>

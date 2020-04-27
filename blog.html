@@ -221,13 +221,18 @@
                     <a href="./index.html" class="nav-link"><i class="fas fa-newspaper"></i> Noticias</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./tips.html" class="nav-link"><i class="fas fa-comments"></i> Tips & Consejos</a>
+                    <a href="./tips.html" class="nav-link disabled"><i class="fas fa-comments"></i> Tips & Consejos</a>
                   </li>
                   <li class="nav-item">
                     <a href="./docs/index.html" class="nav-link active"><i class="fe fe-file-text"></i> Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a href="./category_1.html" class="nav-link"><i class="fas fa-laptop-house"></i> Trabajo a distancia</a>
+                    <a href="./category_1.html" class="nav-link" data-toggle="dropdown" aria-expanded="true"><i class="fas fa-laptop-house"></i> Trabajo a distancia</a>
+                    <div class="dropdown-menu dropdown-menu-arrow" x-placement="bottom-start">
+                      <a href="./cards.html" class="dropdown-item ">Cards design</a>
+                      <a href="./charts.html" class="dropdown-item ">Charts</a>
+                      <a href="./pricing-cards.html" class="dropdown-item ">Pricing cards</a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -237,39 +242,36 @@
           
 
           <div class="container">
-            <div class="page-header">
-              <h1 class="page-title">
-                Blog
-              </h1>
+            <div class="card-header mt-2">
+              <h3 class="section-heading text-uppercase">Blog</h3>
+              <div class="card-options">
+                <small class="ml-2">Seguinos en:</small>
+                <div class="nav-item">
+                  <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
+                  </a>
+                  <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                  </a>
+                  <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                    <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="row row-deck row-cards">
-              <div class="col-lg-3 order-lg-1 mb-4">
-                <a href="" class="btn btn-block btn-gray mb-4">
-                  <i class="fas fa-sort-amount-down-alt mr-2"></i> Nuestras categorías
+             <div class="col-lg-3 order-lg-1 mb-4">
+                <a href="" class="btn btn-block btn-gray">
+                  <i class="fas fa-info mr-2"></i> Lo más leído
                 </a>
 
-                <div class="list-group list-group-transparent mb-0">
-                  <a href="../docs/index.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-thumbs-up"></i></span>Introducción</a>
-                </div>
-
-                <div class="list-group list-group-transparent mb-0">
-                  <a href="../docs/alerts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-toolbox"></i></span>Herramientas digitales</a>
-                  <a href="../docs/buttons.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-chart-bar"></i></span>Gestión de proyectos</a>
-                  <a href="../docs/colors.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-poll"></i></span>Marketing Digital</a>
-                  <a href="../docs/cards.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-desktop"></i></span>Diseño Web</a>
-                  <a href="../docs/typography.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fas fa-seedling"></i></span>Desarrollo profesional</a>
-                </div>
-                <div class="d-none d-lg-block mt-6">
-                  <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">Hacer sugerencias</a>
-                </div>
-                <hr>
-                <a href="" class="btn btn-block btn-gray mb-4">
-                  <i class="fas fa-info mr-2"></i> Lo más visto
-                </a>
                 <div class="m-1 p-1">
                   <div class="d-flex align-items-center">
                   <div>
-                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Aumenta tu productividad con Trello</small></a></h4>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">1. Aumenta tu productividad con Trello</small></a></h4>
                     <small class="text-muted">Es fundamental saber utilizar nuestros dispositivos para colab..</small>
                   </div>
                   </div>
@@ -278,7 +280,7 @@
                 <div class="m-1 p-1">
                   <div class="d-flex align-items-center">
                   <div>
-                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Tips para estrategas de redes sociales</small></a></h4>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">2. Tips para estrategas de redes sociales</small></a></h4>
                     <small class="text-muted">La Gaceta - Tucumán</small>
                   </div>
                   </div>
@@ -287,146 +289,99 @@
                 <div class="m-1 p-1">
                   <div class="d-flex align-items-center">
                   <div>
-                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">3. Mejoremos la comunicación utilizando la escritura</small></a></h4>
                     <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
                   </div>
                   </div>
-                </div> 
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">4. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">5. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+                <br>
+                <div style="max-height: 450px; overflow-y: scroll;">
+                  <a class="twitter-timeline" href="https://twitter.com/CompaniaDigital?ref_src=twsrc%5Etfw">Tweets by CompaniaDigital</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
               </div>
               <div class="col-lg-9">
-                <div class="p-2">
+                <div class="">
                   <div class="row row-cards row-deck">
-              <div class="col-sm-6 col-xl-4">
-                <div class="card">
-                  <a href="#"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you."></a>
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">Well, I didn't vote for you.</a></h4>
-                    <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/16.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Peter Richards</a>
-                        <small class="d-block text-muted">3 days ago</small>
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="card">
+                        <a href="./blog_2.html"><img class="card-img-top" src="./demo/photos/david-marcu-114194-500.jpg" alt="Well, I didn't vote for you.">
+                        <div class="card-body d-flex flex-column">
+                          <h4>Well, I didn't vote for you.</h4>
+                          <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! You don't frighten us, English pig-dog...</div>
+                        </div>
+                        </a>
                       </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="card">
+                        <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">How do you know she is a witch?</a></h4>
+                          <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-4">
+                      <div class="card">
+                        <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">Shut up!</a></h4>
+                          <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
+                          <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">You don't like your job, you don't strike.</a></h4>
+                          <div class="text-muted">But, Aquaman, you cannot marry a woman without gills. You're from two different worlds… Oh, I've ...</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">I hope I didn't brain my damage.</a></h4>
+                          <div class="text-muted">I don't like being outdoors, Smithers. For one thing, there's too many fat children. Oh, loneline...</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="card card-aside">
+                        <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
+                          <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-4">
-                <div class="card">
-                  <a href="#"><img class="card-img-top" src="./demo/photos/davide-cantelli-139887-500.jpg" alt="How do you know she is a witch?"></a>
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">How do you know she is a witch?</a></h4>
-                    <div class="text-muted">Are you suggesting that coconuts migrate? No, no, no! Yes, yes. A bit. But she's got a wart. You ...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/26.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Wayne Holland</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-4">
-                <div class="card">
-                  <a href="#"><img class="card-img-top" src="./demo/photos/dino-reichmuth-84359-500.jpg" alt="Shut up!"></a>
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">Shut up!</a></h4>
-                    <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/7.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Michelle Ross</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
-                    <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/4.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Bobby Knight</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">You don't like your job, you don't strike.</a></h4>
-                    <div class="text-muted">But, Aquaman, you cannot marry a woman without gills. You're from two different worlds… Oh, I've ...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/male/35.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Craig Anderson</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="card">
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">I hope I didn't brain my damage.</a></h4>
-                    <div class="text-muted">I don't like being outdoors, Smithers. For one thing, there's too many fat children. Oh, loneline...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/29.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Crystal Wallace</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="card card-aside">
-                  <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
-                  <div class="card-body d-flex flex-column">
-                    <h4><a href="#">And this isn't my nose. This is a false one.</a></h4>
-                    <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice! …Are you suggesting that coconuts migr...</div>
-                    <div class="d-flex align-items-center pt-5 mt-auto">
-                      <div class="avatar avatar-md mr-3" style="background-image: url(./demo/faces/female/18.jpg)"></div>
-                      <div>
-                        <a href="./profile.html" class="text-default">Rose Bradley</a>
-                        <small class="d-block text-muted">3 days ago</small>
-                      </div>
-                      <div class="ml-auto text-muted">
-                        <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
                 </div>
               </div>
             </div>
@@ -452,60 +407,54 @@
             </div>
           </div>
         </div>
-
-        <div class="">
-          <div class="bg-white">
-            <div class="container py-5">
-              <div class="">
-                <div class="card-header">
-                  <h3 class="section-heading text-uppercase">Últimas publicaciones</h3>
-                  <div class="card-options">
-                    <small class="ml-2">Seguinos en:</small>
-                    <div class="nav-item">
-                      <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
-                      </a>
-                      <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
-                      </a>
-                      <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
-                      </a>
-                      <a href="https://twitter.com/CompaniaDigital" target="_blank">
-                        <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
-                      </a>
-                    </div>
+        <div class="bg-white">
+          <br>
+          <div class="container">
+            <div class="">
+              <div class="card-header">
+                <h3 class="section-heading text-uppercase">Últimas publicaciones</h3>
+                <div class="card-options">
+                  <small class="ml-2">Seguinos en:</small>
+                  <div class="nav-item">
+                    <a href="https://www.linkedin.com/company/la-compa%C3%B1%C3%ADa-digital" target="_blank">
+                      <i class="text-orange dropdown-icon fe fe-linkedin ml-1"></i>
+                    </a>
+                    <a href="https://www.facebook.com/La-Compa%C3%B1%C3%ADa-Digital-110375910450336/" target="_blank">
+                      <i class="text-orange dropdown-icon fe fe-facebook ml-1"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lacompania.digital/" target="_blank">
+                      <i class="text-orange dropdown-icon fe fe-instagram ml-1"></i>
+                    </a>
+                    <a href="https://twitter.com/CompaniaDigital" target="_blank">
+                      <i class="text-orange dropdown-icon fe fe-twitter ml-1"></i>
+                    </a>
                   </div>
                 </div>
-                <div class="card-body">
-                  <div class="row row-deck row-cards">
-                    <!-- Set up your HTML -->
-                    <div class="owl-carousel">
-
-                      <div class="item hvr-float-shadow">
-                        <div class="card">
-                          <div class="card-body d-flex flex-column">
-                            <h4><a href="#">Shut up!</a></h4>
-                            <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
-                          </div>
+              </div>
+              <div class="card-body">
+                <div class="row row-deck row-cards">
+                  <div class="owl-carousel">
+                    <div class="item hvr-float-shadow">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">Shut up!</a></h4>
+                          <div class="text-muted">Burn her! How do you know she is a witch? You don't frighten us, English pig-dogs! Go and boil yo...</div>
                         </div>
                       </div>
-
-                      <div class="item hvr-float-shadow">
-                        <div class="card">
-                          <div class="card-body d-flex flex-column">
-                            <h4><a href="#">How do you know she is a witch?</a></h4>
-                            <div class="text-muted">Are you suggesting that coconuts migrate? But she's got a wart. You ...</div>
-                          </div>
+                    </div>
+                    <div class="item hvr-float-shadow">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">How do you know she is a witch?</a></h4>
+                          <div class="text-muted">Are you suggesting that coconuts migrate? But she's got a wart. You ...</div>
                         </div>
                       </div>
-
-                      <div class="item hvr-float-shadow">
-                        <div class="card">
-                          <div class="card-body d-flex flex-column">
-                            <h4><a href="#">Well, I didn't vote for you.</a></h4>
-                            <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! , English pig-dog...</div>
-                          </div>
+                    </div>
+                    <div class="item hvr-float-shadow">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column">
+                          <h4><a href="#">Well, I didn't vote for you.</a></h4>
+                          <div class="text-muted">Well, we did do the nose. Why? Shut up! Will you shut up?! , English pig-dog...</div>
                         </div>
                       </div>
                     </div>
@@ -514,99 +463,16 @@
               </div>
             </div>
           </div>
-          
+        </div>
+        <div class="">
           <div class="container">
-            <br>
-            <div class="card-header">
-              <h3 class="section-heading text-uppercase">Nuestras categorías</h3>
-              <div class="card-options">
-                <a href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">¿ Alguna sugerencia ?</a>
-              </div>
-            </div>
-            <br>
-
-            <div class="row row-cards row-deck">
-              <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="media mb-5">
-                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat1.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
-                      <div class="media-body">
-                        <h5>Trabajo a distancia</h5>
-                        <address class="text-muted small">
-                          Herramientas, tips y consejos
-                        </address>
-                      </div>
-                    </div>
-                    <div class="h6">Description</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="media mb-5">
-                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat2.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
-                      <div class="media-body">
-                        <h5>Herramientas digitales</h5>
-                        <address class="text-muted small">
-                          Recomendadas
-                        </address>
-                      </div>
-                    </div>
-                    <div class="h6">Description</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="media mb-5">
-                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat3.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
-                      <div class="media-body">
-                        <h5>Entorno de trabajo</h5>
-                        <address class="text-muted small">
-                          Aumenta tu productividad
-                        </address>
-                      </div>
-                    </div>
-                    <div class="h6">Description</div>
-                    <p>Organización integral. Para tu espacio de trabajo tanto físico como digital.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="media mb-5">
-                      <img class="d-flex mr-5 rounded" src="assets/images/icons/categories/cat4.png" alt="LA COMPANY IMAGE" style="width: 64px; height: 64px;">
-                      <div class="media-body">
-                        <h5>Lifestyle</h5>
-                        <address class="text-muted small">
-                          Organización personal
-                        </address>
-                      </div>
-                    </div>
-                    <div class="h6">Description</div>
-                    <p>Recomendaciones para llevar un estilo de vida saludablemente organizado</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <br>
             <div class="card-header">
               <h3 class="section-heading text-uppercase">¿ Qué temas te interesan ?</h3>
               <div class="card-options">
-                <span href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted">Selecciona algunos tags</span>
+                <span href="https://github.com/tabler/tabler/edit/dev/src/_docs/index.md" class="text-muted text-orange">Selecciona algunos tags</span>
               </div>
             </div>
-            <br>
             <div class="card">
               <div class="card-body">
                 
@@ -681,12 +547,85 @@
                   <button type="submit" class="btn btn-outline-secondary">Aplicar y buscar</button>
                 </div>
               </div>
-
             </div>
-          </div>
+              
+            <div class="row">
+              <div class="col-lg-3 order-lg-1 mb-4">
+                <a href="" class="btn btn-block btn-gray">
+                  <i class="fas fa-info mr-2"></i> Lo más leído
+                </a>
 
-          
-      </div>
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">1. Aumenta tu productividad con Trello</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros dispositivos para colab..</small>
+                  </div>
+                  </div>
+                </div>                
+                              
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">2. Tips para estrategas de redes sociales</small></a></h4>
+                    <small class="text-muted">La Gaceta - Tucumán</small>
+                  </div>
+                  </div>
+                </div> 
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">3. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">4. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="m-1 p-1">
+                  <div class="d-flex align-items-center">
+                  <div>
+                    <h4 class="m-0"><a href="single_post.php?idpost=9"><small class="text-blue">5. Mejoremos la comunicación utilizando la escritura</small></a></h4>
+                    <small class="text-muted">Es fundamental saber utilizar nuestros ..</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
+                    <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
+                    <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <h4><a href="#">Weaseling out of things is important to learn.</a></h4>
+                    <div class="text-muted">Please do not offer my god a peanut. That's why I love elementary school, Edna. The children beli...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       <div class="footer bg-three noselect">
         <div class="container">
           <div class="row">
